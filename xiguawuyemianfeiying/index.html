@@ -1,0 +1,1155 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>西瓜午夜免费影院-深夜片单与观影指南</title>
+<meta name="description" content="西瓜午夜免费影院整理深夜可看的中外片单、午夜场排片与观影指南，覆盖惊悚、悬疑、文艺长片与老片修复，含栏目入口、FAQ 与用户评论，方便按类型和时长挑片。">
+<meta name="keywords" content="西瓜午夜免费影院">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230e1420'/%3E%3Cpath d='M32 12c9 6 14 11 14 20 0 11-7 20-14 20s-14-9-14-20c0-9 5-14 14-20z' fill='%23e14b5a'/%3E%3Ccircle cx='32' cy='34' r='7' fill='%23f2e7d5'/%3E%3C/svg%3E">
+<style>
+:root{
+  --bg:#0d1119;
+  --bg-soft:#131a26;
+  --panel:#182131;
+  --panel-2:#1f2a3d;
+  --line:#2a3750;
+  --text:#e8ecf3;
+  --text-dim:#a4b0c4;
+  --text-faint:#7c889d;
+  --brand:#e14b5a;
+  --brand-soft:#f0787f;
+  --accent:#f2c14e;
+  --green:#4fb286;
+  --radius:12px;
+  --radius-sm:8px;
+  --shadow:0 8px 26px rgba(0,0,0,.35);
+  --shadow-sm:0 3px 10px rgba(0,0,0,.28);
+  --space-1:6px;
+  --space-2:12px;
+  --space-3:18px;
+  --space-4:26px;
+  --space-5:38px;
+  --space-6:54px;
+  --fs-1:12px;
+  --fs-2:14px;
+  --fs-3:15px;
+  --fs-4:17px;
+  --fs-5:21px;
+  --fs-6:26px;
+  --fs-7:34px;
+  --announce-h:40px;
+  --header-h:62px;
+  --sticky-offset:102px;
+  --font:"PingFang SC","Hiragino Sans GB","Microsoft YaHei","Source Han Sans SC",system-ui,-apple-system,"Segoe UI",sans-serif;
+}
+*{box-sizing:border-box;}
+html{scroll-behavior:smooth;}
+body{
+  margin:0;
+  background:
+    radial-gradient(1100px 500px at 85% -10%, rgba(225,75,90,.16), transparent 62%),
+    radial-gradient(900px 480px at 5% 0%, rgba(79,178,134,.10), transparent 60%),
+    var(--bg);
+  color:var(--text);
+  font-family:var(--font);
+  font-size:var(--fs-3);
+  line-height:1.78;
+  -webkit-font-smoothing:antialiased;
+}
+a{color:inherit;text-decoration:none;}
+img{max-width:100%;display:block;}
+h1,h2,h3,h4{margin:0;line-height:1.35;font-weight:700;letter-spacing:.2px;}
+p{margin:0 0 var(--space-2);}
+ul,ol{margin:0;padding:0;list-style:none;}
+button{font-family:inherit;cursor:pointer;}
+:focus-visible{outline:2px solid var(--accent);outline-offset:3px;border-radius:4px;}
+[id]{scroll-margin-top:var(--sticky-offset);}
+
+.wrap{width:100%;max-width:1200px;margin:0 auto;padding:0 18px;}
+
+/* ===== 公告条 + 页头吸顶 ===== */
+.sticky-top{position:sticky;top:0;z-index:60;}
+.announce{
+  height:var(--announce-h);
+  display:flex;align-items:center;
+  background:linear-gradient(90deg,#2a1420,#3a1a24 45%,#2a1420);
+  border-bottom:1px solid #4a2230;
+  font-size:var(--fs-1);
+  color:#f4d7db;
+  overflow:hidden;
+}
+.announce .wrap{display:flex;align-items:center;gap:10px;white-space:nowrap;}
+.announce .tag{
+  flex:none;background:var(--brand);color:#fff;border-radius:4px;
+  padding:1px 7px;font-weight:700;letter-spacing:.5px;
+}
+.announce .txt{overflow:hidden;text-overflow:ellipsis;color:#f0dfe2;}
+.announce a{color:var(--accent);font-weight:600;flex:none;border-bottom:1px dotted var(--accent);}
+
+.header{
+  background:rgba(13,17,25,.92);
+  backdrop-filter:blur(10px);
+  border-bottom:1px solid var(--line);
+  height:var(--header-h);
+}
+.header .wrap{display:flex;align-items:center;gap:var(--space-4);height:100%;}
+.brand{display:flex;align-items:center;gap:10px;flex:none;}
+.brand svg{width:32px;height:32px;flex:none;}
+.brand .brand-name{font-size:var(--fs-4);font-weight:800;letter-spacing:.6px;}
+.brand .brand-name em{font-style:normal;color:var(--brand-soft);}
+.main-nav{display:flex;gap:2px;flex:1;min-width:0;overflow:visible;}
+.main-nav a{
+  padding:7px 11px;border-radius:var(--radius-sm);
+  font-size:var(--fs-2);color:var(--text-dim);white-space:nowrap;
+  transition:background .18s,color .18s;
+}
+.main-nav a:hover,.main-nav a.active{background:var(--panel-2);color:#fff;}
+.header-side{display:flex;align-items:center;gap:10px;flex:none;}
+.search-box{position:relative;display:flex;align-items:center;}
+.search-box input{
+  width:170px;height:34px;border-radius:20px;border:1px solid var(--line);
+  background:var(--bg-soft);color:var(--text);padding:0 32px 0 13px;
+  font-size:var(--fs-2);font-family:inherit;
+}
+.search-box input::placeholder{color:var(--text-faint);}
+.search-box button{
+  position:absolute;right:4px;width:26px;height:26px;border:0;border-radius:50%;
+  background:transparent;color:var(--text-dim);font-size:14px;line-height:1;
+}
+.search-box button:hover{color:var(--accent);}
+.search-feedback{
+  position:absolute;top:42px;right:0;width:250px;background:var(--panel);
+  border:1px solid var(--line);border-radius:var(--radius-sm);box-shadow:var(--shadow);
+  padding:10px 12px;font-size:var(--fs-1);color:var(--text-dim);display:none;
+}
+.search-feedback.show{display:block;}
+.search-feedback b{color:var(--accent);}
+.menu-btn{
+  display:none;width:36px;height:34px;border:1px solid var(--line);border-radius:var(--radius-sm);
+  background:var(--panel);color:var(--text);font-size:16px;line-height:1;
+}
+
+/* ===== 首屏 ===== */
+.hero{
+  position:relative;overflow:hidden;
+  border-bottom:1px solid var(--line);
+  background:
+    radial-gradient(700px 320px at 78% 22%, rgba(225,75,90,.22), transparent 65%),
+    linear-gradient(180deg,#111827,#0d1119 78%);
+}
+.hero .wrap{
+  display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,.85fr);
+  gap:var(--space-5);align-items:center;padding-top:var(--space-6);padding-bottom:var(--space-6);
+}
+.hero-eyebrow{
+  display:inline-flex;align-items:center;gap:8px;font-size:var(--fs-1);
+  color:var(--brand-soft);border:1px solid #5a2734;background:rgba(225,75,90,.10);
+  padding:4px 11px;border-radius:20px;letter-spacing:.6px;margin-bottom:var(--space-3);
+}
+.hero-eyebrow i{width:6px;height:6px;border-radius:50%;background:var(--brand);display:inline-block;}
+.hero h1{
+  font-size:var(--fs-7);letter-spacing:1px;line-height:1.28;margin-bottom:var(--space-3);
+}
+.hero h1 span{color:var(--brand-soft);}
+.hero-lead{color:var(--text-dim);font-size:var(--fs-4);max-width:34em;margin-bottom:var(--space-4);}
+.hero-lead b{color:var(--text);font-weight:600;}
+.hero-actions{display:flex;flex-wrap:wrap;gap:12px;margin-bottom:var(--space-4);}
+.btn{
+  display:inline-flex;align-items:center;gap:7px;height:42px;padding:0 20px;
+  border-radius:26px;font-size:var(--fs-2);font-weight:600;border:1px solid transparent;
+  transition:transform .18s,background .18s,color .18s;
+}
+.btn:hover{transform:translateY(-2px);}
+.btn-primary{background:var(--brand);color:#fff;box-shadow:0 6px 18px rgba(225,75,90,.32);}
+.btn-primary:hover{background:#ef5a68;}
+.btn-ghost{background:transparent;border-color:var(--line);color:var(--text);}
+.btn-ghost:hover{background:var(--panel-2);}
+.hero-stats{display:flex;gap:var(--space-4);flex-wrap:wrap;}
+.hero-stats div{min-width:88px;}
+.hero-stats strong{display:block;font-size:var(--fs-5);color:var(--accent);line-height:1.2;}
+.hero-stats small{color:var(--text-faint);font-size:var(--fs-1);letter-spacing:.4px;}
+
+/* 首屏原创视觉：票根 + 月相 */
+.hero-art{position:relative;height:340px;}
+.hero-art .moon{
+  position:absolute;right:14px;top:6px;width:150px;height:150px;border-radius:50%;
+  background:radial-gradient(circle at 36% 32%,#fdf6e3,#f2c14e 48%,#c8942c 80%);
+  box-shadow:0 0 60px rgba(242,193,78,.35),inset -14px -10px 26px rgba(120,80,10,.35);
+}
+.hero-art .moon::after{
+  content:"";position:absolute;inset:0;border-radius:50%;
+  background:radial-gradient(circle at 66% 62%,rgba(120,80,10,.28) 0 22%,transparent 24%),
+             radial-gradient(circle at 40% 70%,rgba(120,80,10,.20) 0 14%,transparent 16%);
+}
+.ticket{
+  position:absolute;left:0;bottom:14px;width:min(100%,318px);
+  background:linear-gradient(160deg,#1c2637,#141c28);
+  border:1px solid #33415c;border-radius:14px;box-shadow:var(--shadow);
+  padding:20px 20px 18px;transform:rotate(-2deg);
+}
+.ticket::before,.ticket::after{
+  content:"";position:absolute;width:20px;height:20px;border-radius:50%;
+  background:var(--bg);border:1px solid #33415c;top:52%;
+}
+.ticket::before{left:-11px;}
+.ticket::after{right:-11px;}
+.ticket .tk-top{display:flex;justify-content:space-between;align-items:baseline;border-bottom:1px dashed #3a4a68;padding-bottom:12px;margin-bottom:12px;}
+.ticket .tk-top b{font-size:var(--fs-4);color:#fff;letter-spacing:1px;}
+.ticket .tk-top span{font-size:var(--fs-1);color:var(--accent);letter-spacing:2px;}
+.ticket .tk-row{display:flex;justify-content:space-between;font-size:var(--fs-1);color:var(--text-dim);margin-bottom:7px;}
+.ticket .tk-row b{color:var(--text);font-weight:600;}
+.ticket .tk-barcode{display:flex;gap:2px;height:26px;margin-top:12px;align-items:flex-end;}
+.ticket .tk-barcode i{display:block;width:3px;background:#8fa0bd;border-radius:1px;}
+.moon-tag{
+  position:absolute;right:0;bottom:88px;font-size:var(--fs-1);color:var(--text-faint);
+  writing-mode:vertical-rl;letter-spacing:4px;
+}
+
+/* ===== 主内容：双栏 ===== */
+.layout{
+  display:grid;grid-template-columns:minmax(0,1fr) 300px;
+  gap:var(--space-5);align-items:start;padding:var(--space-6) 0;
+}
+.main-col{min-width:0;display:flex;flex-direction:column;gap:var(--space-5);}
+.side-col{display:flex;flex-direction:column;gap:var(--space-4);position:sticky;top:calc(var(--sticky-offset) + 10px);}
+.side-card{background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);padding:var(--space-3);}
+.side-card h3{font-size:var(--fs-2);color:var(--text-dim);letter-spacing:1px;margin-bottom:12px;font-weight:600;}
+
+.section{background:var(--bg-soft);border:1px solid var(--line);border-radius:var(--radius);padding:var(--space-4);}
+.sec-head{display:flex;align-items:flex-end;justify-content:space-between;gap:14px;margin-bottom:var(--space-3);flex-wrap:wrap;}
+.sec-head h2{font-size:var(--fs-6);}
+.sec-head .sec-sub{font-size:var(--fs-2);color:var(--text-faint);}
+.sec-head .more{font-size:var(--fs-1);color:var(--brand-soft);border-bottom:1px solid transparent;}
+.sec-head .more:hover{border-bottom-color:var(--brand-soft);}
+.sec-kicker{display:block;font-size:var(--fs-1);color:var(--brand-soft);letter-spacing:2px;margin-bottom:6px;}
+
+/* 概览：不对称组合 */
+.overview-grid{display:grid;grid-template-columns:1.4fr 1fr;gap:var(--space-3);}
+.ov-main{background:var(--panel-2);border:1px solid var(--line);border-radius:var(--radius-sm);padding:var(--space-3);}
+.ov-main p{color:var(--text-dim);font-size:var(--fs-2);}
+.ov-list{display:flex;flex-direction:column;gap:10px;}
+.ov-list li{background:var(--panel);border:1px solid var(--line);border-radius:var(--radius-sm);padding:11px 13px;}
+.ov-list b{display:block;font-size:var(--fs-2);color:var(--text);}
+.ov-list span{font-size:var(--fs-1);color:var(--text-faint);}
+.rule-check{
+  margin-top:var(--space-3);border:1px solid #3a4a68;border-radius:var(--radius-sm);
+  background:linear-gradient(180deg,rgba(79,178,134,.08),transparent);padding:var(--space-3);
+}
+.rule-check h4{font-size:var(--fs-3);margin-bottom:10px;color:var(--green);}
+.rule-check table{width:100%;border-collapse:collapse;font-size:var(--fs-2);}
+.rule-check th,.rule-check td{text-align:left;padding:7px 8px;border-bottom:1px solid var(--line);}
+.rule-check th{color:var(--text-faint);font-weight:500;font-size:var(--fs-1);letter-spacing:.5px;}
+.rule-check td:last-child{color:var(--accent);}
+
+/* 精选卡片网格 */
+.pick-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:var(--space-3);}
+.pick-card{
+  background:var(--panel);border:1px solid var(--line);border-radius:var(--radius-sm);
+  overflow:hidden;display:flex;flex-direction:column;
+  transition:transform .2s,border-color .2s;
+}
+.pick-card:hover{transform:translateY(-3px);border-color:#4a5f85;}
+.pick-card .thumb{position:relative;aspect-ratio:16/9;overflow:hidden;background:#0a0e15;}
+.pick-card .thumb img{width:100%;height:100%;object-fit:cover;opacity:.92;}
+.pick-card .badge{
+  position:absolute;left:8px;top:8px;font-size:var(--fs-1);padding:2px 8px;border-radius:4px;
+  background:rgba(13,17,25,.82);color:var(--accent);border:1px solid rgba(242,193,78,.4);
+}
+.pick-card .body{padding:13px 14px 15px;display:flex;flex-direction:column;gap:7px;flex:1;}
+.pick-card h3{font-size:var(--fs-3);}
+.pick-card p{font-size:var(--fs-2);color:var(--text-dim);margin:0;flex:1;}
+.pick-meta{display:flex;justify-content:space-between;font-size:var(--fs-1);color:var(--text-faint);border-top:1px solid var(--line);padding-top:8px;}
+.pick-meta .score{color:var(--green);font-weight:600;}
+
+/* 最新更新：紧凑列表 */
+.update-list{display:flex;flex-direction:column;}
+.update-list li{display:grid;grid-template-columns:64px minmax(0,1fr);gap:14px;padding:12px 0;border-bottom:1px dashed var(--line);}
+.update-list li:last-child{border-bottom:0;}
+.update-list time{font-size:var(--fs-1);color:var(--text-faint);letter-spacing:.5px;padding-top:3px;}
+.update-list b{font-size:var(--fs-3);display:block;}
+.update-list span{font-size:var(--fs-2);color:var(--text-dim);}
+.update-list .tag-new{display:inline-block;font-size:11px;color:#0d1119;background:var(--accent);border-radius:3px;padding:0 6px;margin-left:7px;font-weight:700;vertical-align:1px;}
+
+/* 分类入口：标签索引 */
+.cat-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:10px;}
+.cat-item{
+  display:flex;flex-direction:column;gap:2px;padding:12px 13px;border-radius:var(--radius-sm);
+  background:var(--panel);border:1px solid var(--line);transition:background .18s,border-color .18s;
+}
+.cat-item:hover{background:var(--panel-2);border-color:#4a5f85;}
+.cat-item b{font-size:var(--fs-2);}
+.cat-item span{font-size:var(--fs-1);color:var(--text-faint);}
+
+/* 深度解析：分栏正文 */
+.deep{border-left:3px solid var(--brand);}
+.deep-body{display:grid;grid-template-columns:020px}
+.deep-grid{display:grid;grid-template-columns:1fr 1fr;gap:var(--space-4);}
+.deep h3{font-size:var(--fs-4);margin:var(--space-3) 0 10px;color:#f4e8e2;}
+.deep h3:first-child{margin-top:0;}
+.deep p{color:var(--text-dim);font-size:var(--fs-2);}
+.deep p b{color:var(--text);}
+.deep .callout{
+  margin:var(--space-3) 0;padding:14px 16px;border-radius:var(--radius-sm);
+  background:var(--panel-2);border:1px solid #3a4a68;font-size:var(--fs-2);color:#dbe3ef;
+}
+.deep .callout strong{color:var(--accent);}
+.timeline{display:flex;flex-direction:column;gap:0;margin-top:6px;}
+.timeline li{position:relative;padding:0 0 16px 20px;border-left:1px solid #3a4a68;}
+.timeline li:last-child{border-left-color:transparent;padding-bottom:0;}
+.timeline li::before{
+  content:"";position:absolute;left:-4.5px;top:6px;width:8px;height:8px;border-radius:50%;
+  background:var(--brand);box-shadow:0 0 0 3px rgba(225,75,90,.18);
+}
+.timeline b{font-size:var(--fs-2);color:var(--text);}
+.timeline span{display:block;font-size:var(--fs-1);color:var(--text-faint);}
+.timeline p{font-size:var(--fs-2);margin:3px 0 0;}
+
+/* 体验指南：编号步骤 */
+.steps{counter-reset:step;display:flex;flex-direction:column;gap:12px;}
+.steps li{
+  counter-increment:step;position:relative;padding:12px 14px 12px 52px;
+  background:var(--panel);border:1px solid var(--line);border-radius:var(--radius-sm);
+}
+.steps li::before{
+  content:counter(step,decimal-leading-zero);position:absolute;left:14px;top:12px;
+  font-size:var(--fs-4);font-weight:800;color:var(--brand-soft);letter-spacing:1px;
+}
+.steps b{font-size:var(--fs-3);display:block;}
+.steps p{font-size:var(--fs-2);color:var(--text-dim);margin:3px 0 0;}
+
+/* FAQ */
+.faq-list{display:flex;flex-direction:column;gap:10px;}
+details{background:var(--panel);border:1px solid var(--line);border-radius:var(--radius-sm);overflow:hidden;}
+details[open]{border-color:#4a5f85;}
+summary{
+  list-style:none;cursor:pointer;padding:13px 42px 13px 15px;position:relative;
+  font-size:var(--fs-3);font-weight:600;
+}
+summary::-webkit-details-marker{display:none;}
+summary::after{
+  content:"+";position:absolute;right:15px;top:11px;font-size:19px;color:var(--brand-soft);line-height:1;
+}
+details[open] summary::after{content:"−";}
+details .faq-a{padding:0 16px 15px;font-size:var(--fs-2);color:var(--text-dim);border-top:1px solid var(--line);margin-top:2px;padding-top:12px;}
+
+/* 评论 */
+.comments{display:grid;grid-template-columns:1fr 1fr;gap:var(--space-3);}
+.comment{background:var(--panel);border:1px solid var(--line);border-radius:var(--radius-sm);padding:13px 15px;}
+.comment .who{display:flex;align-items:center;gap:8px;margin-bottom:7px;}
+.comment .avatar{
+  width:26px;height:26px;border-radius:50%;flex:none;display:grid;place-items:center;
+  font-size:var(--fs-1);font-weight:700;color:#0d1119;background:var(--accent);
+}
+.comment .avatar.g{background:var(--green);}
+.comment .avatar.p{background:#9b8cf0;}
+.comment .who b{font-size:var(--fs-2);}
+.comment .who span{font-size:var(--fs-1);color:var(--text-faint);}
+.comment p{font-size:var(--fs-2);color:#cfd8e5;margin:0;}
+.comment .ref{display:block;font-size:var(--fs-1);color:var(--text-faint);margin-top:8px;border-top:1px dashed var(--line);padding-top:7px;}
+
+/* 资讯 */
+.news{display:grid;grid-template-columns:1fr 1fr;gap:var(--space-3);}
+.news-item{background:var(--panel);border:1px solid var(--line);border-left:3px solid var(--green);border-radius:var(--radius-sm);padding:13px 15px;}
+.news-item time{font-size:var(--fs-1);color:var(--green);letter-spacing:.5px;}
+.news-item h3{font-size:var(--fs-3);margin:4px 0 6px;}
+.news-item p{font-size:var(--fs-2);color:var(--text-dim);margin:0;}
+
+/* 推荐标签 */
+.tag-cloud{display:flex;flex-wrap:wrap;gap:9px;}
+.tag-cloud a{
+  font-size:var(--fs-2);padding:6px 13px;border-radius:20px;border:1px solid var(--line);
+  background:var(--panel);color:var(--text-dim);transition:background .18s,color .18s,border-color .18s;
+}
+.tag-cloud a:hover{background:var(--brand);border-color:var(--brand);color:#fff;}
+
+/* 榜单 */
+.rank-list{display:flex;flex-direction:column;gap:8px;}
+.rank-list li{display:grid;grid-template-columns:28px minmax(0,1fr) auto;gap:12px;align-items:center;
+  background:var(--panel);border:1px solid var(--line);border-radius:var(--radius-sm);padding:10px 13px;}
+.rank-no{font-size:var(--fs-4);font-weight:800;color:var(--text-faint);text-align:center;}
+.rank-list li:nth-child(1) .rank-no{color:var(--accent);}
+.rank-list li:nth-child(2) .rank-no{color:#cfd8e5;}
+.rank-list li:nth-child(3) .rank-no{color:#c48a5a;}
+.rank-list b{font-size:var(--fs-2);display:block;}
+.rank-list span{font-size:var(--fs-1);color:var(--text-faint);}
+.rank-pct{font-size:var(--fs-2);color:var(--green);font-weight:700;}
+
+/* 侧栏 */
+.side-nav a{display:block;padding:7px 10px;border-radius:6px;font-size:var(--fs-2);color:var(--text-dim);border-left:2px solid transparent;}
+.side-nav a:hover{background:var(--panel-2);color:#fff;}
+.side-nav a.hl{color:var(--brand-soft);border-left-color:var(--brand);background:rgba(225,75,90,.08);}
+.side-list li{padding:8px 0;border-bottom:1px dashed var(--line);font-size:var(--fs-2);}
+.side-list li:last-child{border-bottom:0;}
+.side-list b{display:block;color:var(--text);}
+.side-list span{font-size:var(--fs-1);color:var(--text-faint);}
+.side-note{font-size:var(--fs-1);color:var(--text-faint);line-height:1.7;}
+
+/* 页脚 */
+footer{border-top:1px solid var(--line);background:#0a0e15;padding:var(--space-6) 0 var(--space-4);}
+.foot-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr;gap:var(--space-4);margin-bottom:var(--space-5);}
+.foot-brand{display:flex;align-items:center;gap:10px;margin-bottom:10px;}
+.foot-brand svg{width:28px;height:28px;}
+.foot-brand b{font-size:var(--fs-4);letter-spacing:.6px;}
+.foot-desc{font-size:var(--fs-2);color:var(--text-dim);max-width:30em;}
+.foot-col h4{font-size:var(--fs-2);color:var(--text);margin-bottom:12px;letter-spacing:.5px;}
+.foot-col a{display:block;font-size:var(--fs-2);color:var(--text-faint);padding:4px 0;}
+.foot-col a:hover{color:var(--brand-soft);}
+.foot-bottom{
+  border-top:1px solid var(--line);padding-top:var(--space-3);
+  display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap;
+  font-size:var(--fs-1);color:var(--text-faint);
+}
+.foot-bottom .demo{color:#8a94a8;}
+
+/* 回到顶部 */
+#toTop{
+  position:fixed;right:18px;bottom:24px;width:44px;height:44px;border-radius:50%;
+  background:var(--brand);color:#fff;border:0;box-shadow:var(--shadow);font-size:18px;
+  display:none;place-items:center;z-index:70;
+}
+#toTop.show{display:grid;}
+
+@media (max-width:1024px){
+  .layout{grid-template-columns:1fr;}
+  .side-col{position:static;display:grid;grid-template-columns:1fr 1fr;gap:var(--space-3);}
+  .main-nav a{padding:7px 8px;}
+  .search-box input{width:130px;}
+  .hero .wrap{grid-template-columns:1fr;gap:var(--space-4);padding-top:var(--space-5);padding-bottom:var(--space-5);}
+  .hero-art{height:300px;max-width:430px;}
+  .pick-grid{grid-template-columns:repeat(2,minmax(0,1fr));}
+  .foot-grid{grid-template-columns:1fr 1fr;}
+}
+@media (max-width:760px){
+  :root{--announce-h:36px;--header-h:58px;--sticky-offset:94px;}
+  .menu-btn{display:block;}
+  .header .wrap{gap:10px;}
+  .main-nav{
+    display:none;position:absolute;left:0;right:0;top:calc(var(--announce-h) + var(--header-h));
+    background:#111823;border-bottom:1px solid var(--line);flex-direction:column;
+    padding:8px 14px 14px;gap:2px;z-index:61;box-shadow:var(--shadow);
+  }
+  .main-nav.open{display:flex;}
+  .main-nav a{padding:10px 8px;font-size:var(--fs-3);}
+  .search-box{display:none;}
+  .overview-grid,.deep-grid,.comments,.news,.side-col{grid-template-columns:1fr;}
+  .pick-grid{grid-template-columns:1fr;}
+  .hero h1{font-size:var(--fs-6);}
+  .hero-lead{font-size:var(--fs-3);}
+  .hero-art{height:260px;}
+  .hero-art .moon{width:112px;height:112px;}
+  .ticket{width:min(100%,290px);}
+  .section{padding:var(--space-3);}
+  .sec-head h2{font-size:var(--fs-5);}
+  .foot-grid{grid-template-columns:1fr 1fr;gap:var(--space-3);}
+  #toTop{right:12px;bottom:16px;width:40px;height:40px;}
+  .sticky-top .header .wrap{position:relative;}
+}
+@media (max-width:400px){
+  .wrap{padding:0 13px;}
+  .hero-stats{gap:var(--space-3);}
+  .hero-stats strong{font-size:var(--fs-4);}
+  .rank-list li{grid-template-columns:24px minmax(0,1fr) auto;gap:8px;}
+  .announce .wrap{gap:6px;}
+  .foot-grid{grid-template-columns:1fr;}
+}
+@media (prefers-reduced-motion:reduce){
+  *{transition:none!important;animation:none!important;scroll-behavior:auto!important;}
+  .btn:hover,.pick-card:hover{transform:none;}
+}
+</style>
+<script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+</head>
+<body>
+
+<div class="sticky-top">
+  <div class="announce" id="announce">
+    <div class="wrap">
+      <span class="tag">更新</span>
+      <span class="txt">11 月 7 日深夜场单：<b style="color:#fff">《雾港末班车》</b>修复版上线，另补 4 部 90 分钟内短长片，排片表已同步。</span>
+      <a href="/#latest">看片单</a>
+    </div>
+  </div>
+
+  <header class="header">
+    <div class="wrap">
+      <a class="brand" href="/#top" aria-label="西瓜午夜免费影院 首页">
+        <svg viewBox="0 0 64 64" aria-hidden="true" focusable="false">
+          <rect width="64" height="64" rx="14" fill="#182131" stroke="#33415c"/>
+          <path d="M32 11c9.5 6.4 15 11.8 15 21 0 11.6-7.3 20.5-15 20.5S17 43.6 17 32c0-9.2 5.5-14.6 15-21z" fill="#e14b5a"/>
+          <path d="M25.5 29.5c0-4.2 2.9-7.6 6.5-8.6 3.6 1 6.5 4.4 6.5 8.6 0 6.2-3 12-6.5 15.2-3.5-3.2-6.5-9-6.5-15.2z" fill="#f2e7d5"/>
+          <rect x="30.6" y="24" width="2.8" height="12" rx="1.4" fill="#e14b5a"/>
+        </svg>
+        <span class="brand-name">西瓜<em>午夜</em>免费影院</span>
+      </a>
+
+      <nav class="main-nav" id="mainNav" aria-label="主题导航">
+        <a href="/#overview" class="active">午夜场概览</a>
+        <a href="/#picks">深夜精选</a>
+        <a href="/#latest">本周更新</a>
+        <a href="/#channels">频道分类</a>
+        <a href="/#deep">深度解析</a>
+        <a href="/#guide">体验指南</a>
+        <a href="/#rank">口碑榜</a>
+        <a href="/#faq">常见问题</a>
+      </nav>
+
+      <div class="header-side">
+        <div class="search-box">
+          <input type="search" id="q" placeholder="搜片名、导演、类型" aria-label="站内搜索">
+          <button type="button" id="qBtn" aria-label="搜索">⌕</button>
+          <div class="search-feedback" id="searchFb" role="status" aria-live="polite"></div>
+        </div>
+        <button class="menu-btn" id="menuBtn" aria-expanded="false" aria-controls="mainNav" aria-label="展开或收起导航">☰</button>
+      </div>
+    </div>
+  </header>
+</div>
+
+<main id="top">
+  <section class="hero" aria-labelledby="heroTitle">
+    <div class="wrap">
+      <div>
+        <span class="hero-eyebrow"><i></i>深夜 23:00—03:00 档 · 每周四排片更新</span>
+        <h1 id="heroTitle">西瓜午夜<span>免费影院</span></h1>
+        <p class="hero-lead">一份只服务于夜里的观影清单：<b>90 分钟以内的短长片、修复版老片、午夜场首映与冷门惊悚</b>，按片长和情绪排片。11 月 8 日当周收录 46 个条目，标注来源平台与放映窗口，不做二次剪辑。</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="/#latest">看 11 月 8 日片单 <span aria-hidden="true">→</span></a>
+          <a class="btn btn-ghost" href="/#guide">深夜选片指南</a>
+        </div>
+        <div class="hero-stats">
+          <div><strong>46</strong><small>在库条目</small></div>
+          <div><strong>11</strong><small>午夜频道</small></div>
+          <div><strong>9</strong><small>修复版</small></div>
+          <div><strong>93%</strong><small>片源可回溯</small></div>
+        </div>
+      </div>
+
+      <div class="hero-art" aria-hidden="true">
+        <div class="moon"></div>
+        <div class="moon-tag">ZERO HOUR SCREENING</div>
+        <div class="ticket">
+          <div class="tk-top"><b>午夜场票根</b><span>NO.1108</span></div>
+          <div class="tk-row"><span>片名</span><b>《雾港末班车》</b></div>
+          <div class="tk-row"><span>场次</span><b>23:40 / 01:30</b></div>
+          <div class="tk-row"><span>片长</span><b>88 分钟</b></div>
+          <div class="tk-row"><span>版本</span><b>4K 修复 · 原声</b></div>
+          <div class="tk-barcode">
+            <i style="height:22px"></i><i style="height:14px"></i><i style="height:26px"></i><i style="height:10px"></i>
+            <i style="height:20px"></i><i style="height:26px"></i><i style="height:12px"></i><i style="height:18px"></i>
+            <i style="height:26px"></i><i style="height:10px"></i><i style="height:22px"></i><i style="height:16px"></i>
+            <i style="height:26px"></i><i style="height:12px"></i><i style="height:20px"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="wrap">
+    <div class="layout">
+      <div class="main-col">
+
+        <!-- 1 领域概览 -->
+        <section class="section" id="overview" aria-labelledby="h-overview">
+          <div class="sec-head">
+            <div>
+              <span class="sec-kicker">FIELD OVERVIEW</span>
+              <h2 id="h-overview">午夜场概览：夜里两小时能看什么</h2>
+            </div>
+            <a class="more" href="/#picks">按类型找片 →</a>
+          </div>
+          <div class="overview-grid">
+            <div class="ov-main">
+              <p>午夜场的挑选逻辑与白天不同。23 点之后，注意力窗口通常只剩 80—100 分钟，于是《雾港末班车》88 分钟、《夜行列车 404》76 分钟这类短长片更合适；超过 150 分钟的史诗片在 11 月片单里只保留 3 部，统一排在 22:30 前开场。</p>
+              <p>片源结构上，修复版占 9 条，集中在 1970—1990 年代的港台与日本犯罪片；新片占 17 条，多为流媒体独播。两类片子的字幕版本、画幅比例不同，播放前需要核对。</p>
+            </div>
+            <ul class="ov-list">
+              <li><b>短长片区间</b><span>70—100 分钟，11 月共 21 条，占在库 46%</span></li>
+              <li><b>修复版专场</b><span>9 条，最早 1974 年《暗巷枪声》</span></li>
+              <li><b>平台独播</b><span>7 条，需在 02:00 前观看</span></li>
+              <li><b>限定放映窗口</b><span>4 条，本周四 24:00 下架</span></li>
+            </ul>
+          </div>
+
+          <div class="rule-check">
+            <h4>一条片单能不能进午夜场：四项可核对条件</h4>
+            <table>
+              <thead><tr><th>条件</th><th>具体标准</th><th>11 月达标数</th></tr></thead>
+              <tbody>
+                <tr><td>片长</td><td>≤100 分钟，或 22:30 前开场</td><td>21 / 46</td></tr>
+                <tr><td>放映窗口</td><td>平台标注的可用时段含 23:00—03:00</td><td>38 / 46</td></tr>
+                <tr><td>字幕</td><td>中文简体完整字幕，无机器翻译标记</td><td>43 / 46</td></tr>
+                <tr><td>画幅</td><td>原始画幅或官方修复画幅，不裁切</td><td>40 / 46</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+
+        <!-- 2 精选内容推荐 -->
+        <section class="section" id="picks" aria-labelledby="h-picks">
+          <div class="sec-head">
+            <div>
+              <span class="sec-kicker">EDITOR'S PICK</span>
+              <h2 id="h-picks">深夜精选：11 月 8 日当周 6 部值得熬夜的片子</h2>
+            </div>
+            <span class="sec-sub">按片长排序</span>
+          </div>
+          <div class="pick-grid">
+            <article class="pick-card">
+              <div class="thumb"><img src="https://picsum.photos/seed/wm-fogport/480/270" width="480" height="270" loading="lazy" alt="雾港末班车 剧照：夜雾中的末班电车车头灯"><span class="badge">修复版</span></div>
+              <div class="body">
+                <h3>雾港末班车</h3>
+                <p>88 分钟，1979 年港产犯罪片，4K 修复。全片七成夜戏，电车线路是真实取景，终点站镜头在 2019 年重建前拍摄。</p>
+                <div class="pick-meta"><span>23:40 场</span><span class="score">8.4</span></div>
+              </div>
+            </article>
+            <article class="pick-card">
+              <div class="thumb"><img src="https://picsum.photos/seed/wm-night404/480/270" width="480" height="270" loading="lazy" alt="夜行列车404 剧照：深夜车厢走道与应急灯"><span class="badge">短长片</span></div>
+              <div class="body">
+                <h3>夜行列车 404</h3>
+                <p>76 分钟，单一车厢场景，对白密集。适合 01:00 之后看，结尾 12 分钟没有配乐，靠环境音推进。</p>
+                <div class="pick-meta"><span>01:10 场</span><span class="score">8.1</span></div>
+              </div>
+            </article>
+            <article class="pick-card">
+              <div class="thumb"><img src="https://picsum.photos/seed/wm-alleygun/480/270" width="480" height="270" loading="lazy" alt="暗巷枪声 剧照：老式霓虹灯下的巷口对峙"><span class="badge">1974</span></div>
+              <div class="body">
+                <h3>暗巷枪声</h3>
+                <p>94 分钟，午夜场常客。修复版补回了当年院线删掉的 3 分钟巷战，声音轨重新混录，低频偏重，建议调低音量。</p>
+                <div class="pick-meta"><span>24:00 场</span><span class="score">8.6</span></div>
+              </div>
+            </article>
+            <article class="pick-card">
+              <div class="thumb"><img src="https://picsum.photos/seed/wm-lighthouse/480/270" width="480" height="270" loading="lazy" alt="灯塔第七夜 剧照：灯塔旋转光束扫过海面"><span class="badge">独播</span></div>
+              <div class="body">
+                <h3>灯塔第七夜</h3>
+                <p>102 分钟，流媒体独播，02:00 前有效。前 40 分钟几乎无台词，适合刚下夜班、不想听人说话的时候。</p>
+                <div class="pick-meta"><span>23:20 场</span><span class="score">7.9</span></div>
+              </div>
+            </article>
+            <article class="pick-card">
+              <div class="thumb"><img src="https://picsum.photos/seed/wm-tape/480/270" width="480" height="270" loading="lazy" alt="磁带里的夏天 剧照：老式录音机与散落的磁带"><span class="badge">文艺</span></div>
+              <div class="body">
+                <h3>磁带里的夏天</h3>
+                <p>81 分钟，独立制作，录音带质感画面。导演在映后访谈里说全片只用了两支定焦镜头，转场靠黑场。</p>
+                <div class="pick-meta"><span>22:50 场</span><span class="score">7.6</span></div>
+              </div>
+            </article>
+            <article class="pick-card">
+              <div class="thumb"><img src="https://picsum.photos/seed/wm-sniper/480/270" width="480" height="270" loading="lazy" alt="零点狙击 剧照：城市楼顶的夜间狙击镜视野"><span class="badge">新片</span></div>
+              <div class="body">
+                <h3>零点狙击</h3>
+                <p>112 分钟，节奏快，中段 20 分钟连续追车。适合 23:00 之前开场，熬夜看容易在第二幕走神。</p>
+                <div class="pick-meta"><span>22:40 场</span><span class="score">7.8</span></div>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <!-- 3 最新更新 -->
+        <section class="section" id="latest" aria-labelledby="h-latest">
+          <div class="sec-head">
+            <div>
+              <span class="sec-kicker">UPDATES</span>
+              <h2 id="h-latest">本周更新：11 月 2 日至 11 月 8 日新增与下架</h2>
+            </div>
+            <span class="sec-sub">按时间倒序</span>
+          </div>
+          <ul class="update-list">
+            <li>
+              <time>11-08</time>
+              <div><b>《雾港末班车》4K 修复版上架<span class="tag-new">新</span></b>
+              <span>片长由 91 分钟修正为 88 分钟，删除 3 分钟片头广告卡；字幕换成 2024 年重校版。</span></div>
+            </li>
+            <li>
+              <time>11-07</time>
+              <div><b>《夜行列车 404》增加 01:10 场</b>
+              <span>原 00:20 场因版权窗口调整取消，新场次提前 20 分钟结束，适合第二天要早起的人。</span></div>
+            </li>
+            <li>
+              <time>11-06</time>
+              <div><b>修复专题「老港片夜场」补 3 部</b>
+              <span>新增《暗巷枪声》《雨夜电话亭》《九龙最后一班》，均为 90 分钟上下，画幅 1.85:1。</span></div>
+            </li>
+            <li>
+              <time>11-04</time>
+              <div><b>《灯塔第七夜》独播窗口缩短</b>
+              <span>平台页面显示可看时间改为 23:00—02:00，11 月 12 日后恢复常规窗口。</span></div>
+            </li>
+            <li>
+              <time>11-03</time>
+              <div><b>下架 5 条片源</b>
+              <span>《午夜呼叫》《末排观众》等 5 条因授权到期移出片单，条目页保留评分与评论。</span></div>
+            </li>
+            <li>
+              <time>11-02</time>
+              <div><b>新增「90 分钟以内」筛选</b>
+              <span>按 70—100 分钟细分三档，当前收录 21 条，最长 99 分钟《雨夜电话亭》。</span></div>
+            </li>
+          </ul>
+        </section>
+
+        <!-- 4 分类入口 -->
+        <section class="section" id="channels" aria-labelledby="h-channels">
+          <div class="sec-head">
+            <div>
+              <span class="sec-kicker">CHANNELS</span>
+              <h2 id="h-channels">频道分类：按类型、片长与年代找午夜片</h2>
+            </div>
+            <span class="sec-sub">11 个频道 · 46 条目</span>
+          </div>
+          <div class="cat-grid">
+            <a class="cat-item" href="/#picks"><b>午夜惊悚片</b><span>12 条 · 平均 92 分钟</span></a>
+            <a class="cat-item" href="/#picks"><b>悬疑推理夜场</b><span>9 条 · 含 2 部改编</span></a>
+            <a class="cat-item" href="/#deep"><b>港片修复专场</b><span>9 条 · 1974—1993</span></a>
+            <a class="cat-item" href="/#picks"><b>90 分钟以内短长片</b><span>21 条 · 70—100 分钟</span></a>
+            <a class="cat-item" href="/#guide"><b>零台词慢电影</b><span>4 条 · 对白占比低于 10%</span></a>
+            <a class="cat-item" href="/#news"><b>流媒体独播窗口</b><span>7 条 · 限时可用</span></a>
+            <a class="cat-item" href="/#rank"><b>高口碑冷门片</b><span>6 条 · 评分 8.0 以上</span></a>
+            <a class="cat-item" href="/#picks"><b>单一场景片</b><span>5 条 · 车厢、房间、灯塔</span></a>
+            <a class="cat-item" href="/#deep"><b>黑白影像专场</b><span>3 条 · 原始黑白</span></a>
+            <a class="cat-item" href="/#latest"><b>本周下架预告</b><span>4 条 · 周四 24:00</span></a>
+            <a class="cat-item" href="/#faq"><b>字幕与画幅说明</b><span>3 种版本差异</span></a>
+          </div>
+        </section>
+
+        <!-- 5 深度解析 -->
+        <section class="section deep" id="deep" aria-labelledby="h-deep">
+          <div class="sec-head">
+            <div>
+              <span class="sec-kicker">ANALYSIS</span>
+              <h2 id="h-deep">深度解析：午夜场为什么偏爱 90 分钟</h2>
+            </div>
+          </div>
+          <div class="deep-grid">
+            <div>
+              <h3>片长不是美学选择，是播放窗口的算术</h3>
+              <p>把 23:00 到 03:00 视为一个可用窗口，最多容纳 4 小时。若片子 88 分钟，加上片头、字幕确认、缓冲，实际占用约 100 分钟，一晚能排两场还有余量；换成 150 分钟的片子，第二场必然跨过 02:00，而多数平台的独播窗口在 02:00 关闭。</p>
+              <p>11 月片单里 21 条短长片的平均片长是 86.4 分钟，而全部 46 条的平均是 103.7 分钟。差的 17 分钟，正好是两条独播片的时间差。</p>
+              <div class="callout">可被反驳的判断：<strong>《零点狙击》112 分钟被排在 22:40 场，说明长片不是不能看，而是必须提前到 22:30—23:00 开场。</strong>如果平台把独播窗口延到 03:30，这个算术就会变。</div>
+              <h3>修复版的价值在声音，不在清晰度</h3>
+              <p>《暗巷枪声》修复说明列出三项改动：画面 4K 扫描、原声磁转数、删除院线广告卡。真正影响深夜观看的是第二项——旧版声音轨在低音量下对白发糊，重新混录后可把音量压到 30% 仍听清台词，这对合租或家里有人早睡的情况很关键。</p>
+              <p>对比 2016 年发行的 DVD 版，同一段巷战的环境声轨低频被削掉了约 6dB，枪声不再压住对白。修复版没有做这件事，反而保留了原始动态范围。</p>
+            </div>
+            <div>
+              <h3>一条被引用的时间线：从院线到午夜场</h3>
+              <ul class="timeline">
+                <li><b>1979 年 12 月</b><span>院线上映</span><p>《雾港末班车》首轮放映 91 分钟，含片头广告卡。</p></li>
+                <li><b>1998 年 3 月</b><span>录像带版</span><p>片长缩至 86 分钟，删掉 5 分钟支线，画幅裁为 1.33:1。</p></li>
+                <li><b>2016 年 9 月</b><span>DVD 修复</span><p>恢复 88 分钟，但声音轨为重新配乐版本，原声缺失。</p></li>
+                <li><b>2026 年 11 月 7 日</b><span>4K 修复上线</span><p>88 分钟，1.85:1 原始画幅，原声磁转数完成。</p></li>
+              </ul>
+              <h3>说法差异：谁在定义「午夜场」</h3>
+              <p>平台方在 11 月 4 日的更新说明里把午夜场定义为「23:00 之后开场的场次」；而片单的实际排序按结束时间，23:40 开场、01:08 结束的《雾港末班车》被放在 01:10 开场的《夜行列车 404》之前。两种口径导致的差别是：一部 23:50 开场、01:40 结束的 110 分钟片子，按开场算属于午夜场，按结束算则被归到凌晨档。</p>
+              <p>这些属于规则描述层面的差异，不是片源问题。11 月 8 日的片单页同时标了开场和结束时间，用户可以自行按其中一种口径筛选。</p>
+            </div>
+          </div>
+        </section>
+
+        <!-- 6 体验指南 -->
+        <section class="section" id="guide" aria-labelledby="h-guide">
+          <div class="sec-head">
+            <div>
+              <span class="sec-kicker">GUIDE</span>
+              <h2 id="h-guide">体验指南：深夜看片的五步准备</h2>
+            </div>
+            <span class="sec-sub">按顺序执行</span>
+          </div>
+          <ol class="steps">
+            <li><b>先确认结束时间，再确认片长</b><p>《零点狙击》112 分钟排在 22:40，结束接近 00:32；《灯塔第七夜》102 分钟排 23:20，结束 01:02。以结束时间倒推第二天的起床时间，比看片长可靠。</p></li>
+            <li><b>核对字幕版本</b><p>修复版与独播版的字幕来源不同。11 月片单里 3 条标了「机器翻译待校」，分别出现在两条老片和一条新片上，播放前在条目页看版本标注。</p></li>
+            <li><b>调低动态范围或开夜间音量</b><p>《暗巷枪声》修复版低频偏重，建议系统音量 25%—35%；《雾港末班车》对白密集，可以开到 45%。</p></li>
+            <li><b>设置 20 分钟提醒</b><p>单一场景片如《夜行列车 404》中段节奏慢，设一个 20 分钟提醒，避免在关键反转前睡着。反转发生在第 58 分钟。</p></li>
+            <li><b>第二天补看时先看条目页</b><p>下架后条目页保留 200 字以内的剧情概述和评分，但不含结局；《雨夜电话亭》的结局描述在 11 月 3 日已从概述中移除。</p></li>
+          </ol>
+        </section>
+
+        <!-- 7 FAQ -->
+        <section class="section" id="faq" aria-labelledby="h-faq">
+          <div class="sec-head">
+            <div>
+              <span class="sec-kicker">FAQ</span>
+              <h2 id="h-faq">常见问题：片源、字幕与场次</h2>
+            </div>
+          </div>
+          <div class="faq-list">
+            <details open>
+              <summary>午夜场和凌晨场的分界线在哪一刻？</summary>
+              <div class="faq-a">片单以 02:00 作为分界。23:00—02:00 开场的场次算午夜场，02:00 之后算凌晨场。11 月 8 日片单里有 4 条凌晨场，均为独播片，结束时间在 03:20 前后。</div>
+            </details>
+            <details>
+              <summary>修复版《暗巷枪声》和 2016 年 DVD 版差在哪三处？</summary>
+              <div class="faq-a">画幅从裁切的 1.33:1 恢复到 1.85:1；声音轨由重新配乐换回原声磁转数；补回院线删掉的 3 分钟巷战。片长因此从 91 分钟变为 94 分钟。</div>
+            </details>
+            <details>
+              <summary>独播片过了 02:00 还能看吗？</summary>
+              <div class="faq-a">不能。11 月片单里的 7 条独播片在平台页声明可用窗口为 23:00—02:00，《灯塔第七夜》11 月 12 日后恢复常规窗口，其余 6 条维持限时。</div>
+            </details>
+            <details>
+              <summary>90 分钟以内的片子只有惊悚类型吗？</summary>
+              <div class="faq-a">不是。21 条短长片里，惊悚 9 条、悬疑 4 条、文艺 5 条、纪录片 3 条。最短的是 70 分钟的《雨夜电话亭》修复版。</div>
+            </details>
+            <details>
+              <summary>为什么有些条目没有剧照？</summary>
+              <div class="faq-a">片源方未提供剧照授权，条目页改用文字描述替代，例如《九龙最后一班》只写了 200 字场景说明，没有配图。</div>
+            </details>
+            <details>
+              <summary>评分是怎么来的？</summary>
+              <div class="faq-a">按条目页的用户评分聚合，样本少于 50 人的条目不显示分数，改用「样本不足」标注。11 月片单里 3 条处于样本不足状态。</div>
+            </details>
+          </div>
+        </section>
+
+        <!-- 8 用户评论 -->
+        <section class="section" id="comments" aria-labelledby="h-comments">
+          <div class="sec-head">
+            <div>
+              <span class="sec-kicker">COMMENTS</span>
+              <h2 id="h-comments">用户评论：看完之后说的几句</h2>
+            </div>
+            <span class="sec-sub">近 48 小时 6 条</span>
+          </div>
+          <div class="comments">
+            <div class="comment">
+              <div class="who"><span class="avatar">周</span><b>周启明</b><span>11-07 23:52</span></div>
+              <p>《雾港末班车》修复版声音比我 2019 年看的版本干净很多，电车刹车那一段不再糊成一片。就是片头广告卡删了以后开场有点突然，没缓过来。</p>
+              <span class="ref">指向条目：雾港末班车</span>
+            </div>
+            <div class="comment">
+              <div class="who"><span class="avatar g">林</span><b>林小满</b><span>11-08 00:31</span></div>
+              <p>《夜行列车 404》确实适合 01:10 场。76 分钟没觉得短，反而结尾 12 分钟没配乐那段最抓人。不过中段 40 分钟我差点睡着，提醒功能救了我。</p>
+              <span class="ref">指向条目：夜行列车 404</span>
+            </div>
+            <div class="comment">
+              <div class="who"><span class="avatar p">黄</span><b>黄叙</b><span>11-06 21:14</span></div>
+              <p>条目页写《暗巷枪声》94 分钟，我这边播放器显示 91 分钟，差了 3 分钟。后来发现是片尾字幕被算进正片，播放器默认跳过字幕。</p>
+              <span class="ref">指向条目：暗巷枪声</span>
+            </div>
+            <div class="comment">
+              <div class="who"><span class="avatar">何</span><b>何东</b><span>11-05 02:08</span></div>
+              <p>《灯塔第七夜》前 40 分钟无台词，我下夜班回来看刚好，但 02:00 关窗口这事太坑了，差 15 分钟没看完。</p>
+              <span class="ref">指向条目：灯塔第七夜</span>
+            </div>
+            <div class="comment">
+              <div class="who"><span class="avatar g">苏</span><b>苏未</b><span>11-04 23:20</span></div>
+              <p>《磁带里的夏天》81 分钟，录影带质感画面在手机上看着有点糊，换到平板好一些。片长确实舒服，不用中途暂停。</p>
+              <span class="ref">指向条目：磁带里的夏天</span>
+            </div>
+            <div class="comment">
+              <div class="who"><span class="avatar p">邵</span><b>邵川</b><span>11-03 01:47</span></div>
+              <p>评分聚合还行，但《九龙最后一班》没图只有 200 字描述，挑片的时候很难判断。希望之后补几张剧照，哪怕不是高清。</p>
+              <span class="ref">指向条目：九龙最后一班</span>
+            </div>
+          </div>
+        </section>
+
+        <!-- 9 相关资讯 -->
+        <section class="section" id="news" aria-labelledby="h-news">
+          <div class="sec-head">
+            <div>
+              <span class="sec-kicker">NEWS</span>
+              <h2 id="h-news">相关资讯：档期、授权与修复进度</h2>
+            </div>
+          </div>
+          <div class="news">
+            <article class="news-item">
+              <time>2026-11-08</time>
+              <h3>「老港片夜场」修复专题扩到 9 部</h3>
+              <p>11 月 6 日补入《雨夜电话亭》《九龙最后一班》后，专题内 1974—1993 年作品达到 9 部，其中 5 部完成原声磁转数，其余 4 部仍用 2016 年混录轨。</p>
+            </article>
+            <article class="news-item">
+              <time>2026-11-05</time>
+              <h3>《灯塔第七夜》独播窗口临时缩短</h3>
+              <p>平台 11 月 4 日公告窗口改为 23:00—02:00，11 月 12 日恢复。片方回应称属于档期调整，不涉及内容修改，片长维持 102 分钟。</p>
+            </article>
+            <article class="news-item">
+              <time>2026-11-03</time>
+              <h3>5 条片源授权到期下架</h3>
+              <p>《午夜呼叫》《末排观众》等 5 条移出片单，条目页保留评分与评论。片单从 51 条降到 46 条，短长片占比从 39% 升到 46%。</p>
+            </article>
+            <article class="news-item">
+              <time>2026-11-02</time>
+              <h3>「90 分钟以内」筛选上线</h3>
+              <p>筛选分 70—80、81—90、91—100 三档，当前分别收录 6、8、7 条。最长的 99 分钟是《雨夜电话亭》修复版。</p>
+            </article>
+          </div>
+        </section>
+
+        <!-- 10 相关推荐 -->
+        <section class="section" id="related" aria-labelledby="h-related">
+          <div class="sec-head">
+            <div>
+              <span class="sec-kicker">RELATED</span>
+              <h2 id="h-related">相关推荐：按情绪和时长再找一轮</h2>
+            </div>
+          </div>
+          <div class="tag-cloud">
+            <a href="/#picks">午夜惊悚片 80 分钟以内</a>
+            <a href="/#deep">港片修复版原声轨</a>
+            <a href="/#channels">单一场景悬疑片</a>
+            <a href="/#picks">零台词慢电影</a>
+            <a href="/#latest">本周下架预告</a>
+            <a href="/#guide">深夜音量设置</a>
+            <a href="/#rank">高口碑冷门片 8.0+</a>
+            <a href="/#channels">黑白影像专场</a>
+            <a href="/#faq">字幕版本差异</a>
+            <a href="/#picks">夜行列车 404 同类型</a>
+            <a href="/#sec-rank">午夜场口碑榜</a>
+            <a href="/#deep">片长与播放窗口</a>
+          </div>
+        </section>
+
+        <!-- 11 榜单 -->
+        <section class="section" id="rank" aria-labelledby="h-rank">
+          <div class="sec-head">
+            <div>
+              <span class="sec-kicker">RANKING</span>
+              <h2 id="h-rank">口碑榜：11 月 8 日午夜场评分前六</h2>
+            </div>
+            <span class="sec-sub">样本 ≥50 人</span>
+          </div>
+          <ul class="rank-list">
+            <li><span class="rank-no">1</span><div><b>暗巷枪声（1974 修复版）</b><span>94 分钟 · 评分样本 1,204</span></div><span class="rank-pct">8.6</span></li>
+            <li><span class="rank-no">2</span><div><b>雾港末班车（4K 修复）</b><span>88 分钟 · 评分样本 986</span></div><span class="rank-pct">8.4</span></li>
+            <li><span class="rank-no">3</span><div><b>夜行列车 404</b><span>76 分钟 · 评分样本 742</span></div><span class="rank-pct">8.1</span></li>
+            <li><span class="rank-no">4</span><div><b>雨夜电话亭（修复版）</b><span>70 分钟 · 评分样本 615</span></div><span class="rank-pct">8.0</span></li>
+            <li><span class="rank-no">5</span><div><b>灯塔第七夜</b><span>102 分钟 · 评分样本 531</span></div><span class="rank-pct">7.9</span></li>
+            <li><span class="rank-no">6</span><div><b>零点狙击</b><span>112 分钟 · 评分样本 488</span></div><span class="rank-pct">7.8</span></li>
+          </ul>
+        </section>
+
+      </div>
+
+      <!-- 侧栏 -->
+      <aside class="side-col" aria-label="侧边信息">
+        <div class="side-card">
+          <h3>栏目导航</h3>
+          <nav class="side-nav" id="sideNav" aria-label="页内栏目导航">
+            <a href="/#overview">午夜场概览</a>
+            <a href="/#picks">深夜精选</a>
+            <a href="/#latest">本周更新</a>
+            <a href="/#channels">频道分类</a>
+            <a href="/#deep">深度解析</a>
+            <a href="/#guide">体验指南</a>
+            <a href="/#faq">常见问题</a>
+            <a href="/#comments">用户评论</a>
+            <a href="/#news">相关资讯</a>
+            <a href="/#related">相关推荐</a>
+            <a href="/#rank">口碑榜</a>
+          </nav>
+        </div>
+
+        <div class="side-card">
+          <h3>今晚三场</h3>
+          <ul class="side-list">
+            <li><b>23:40 雾港末班车</b><span>88 分钟 · 01:08 结束</span></li>
+            <li><b>01:10 夜行列车 404</b><span>76 分钟 · 02:26 结束</span></li>
+            <li><b>22:50 磁带里的夏天</b><span>81 分钟 · 00:11 结束</span></li>
+          </ul>
+        </div>
+
+        <div class="side-card">
+          <h3>版本提醒</h3>
+          <p class="side-note">11 月 8 日片单中，《雨夜电话亭》《九龙最后一班》仍为 2016 年混录声音轨；《暗巷枪声》《雾港末班车》已完成原声磁转数。播放前可在条目页核对。</p>
+        </div>
+
+        <div class="side-card">
+          <h3>更新节奏</h3>
+          <p class="side-note">排片每周四更新，下架预告每周三发布。11 月 12 日将调整独播窗口，涉及 7 条片源中的 4 条。</p>
+        </div>
+      </aside>
+    </div>
+  </div>
+</main>
+
+<footer id="footer">
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <div class="foot-brand">
+          <svg viewBox="0 0 64 64" aria-hidden="true" focusable="false">
+            <rect width="64" height="64" rx="14" fill="#182131" stroke="#33415c"/>
+            <path d="M32 11c9.5 6.4 15 11.8 15 21 0 11.6-7.3 20.5-15 20.5S17 43.6 17 32c0-9.2 5.5-14.6 15-21z" fill="#e14b5a"/>
+            <circle cx="32" cy="34" r="7" fill="#f2e7d5"/>
+          </svg>
+          <b>西瓜午夜免费影院</b>
+        </div>
+        <p class="foot-desc">夜里十一点后开场的场次清单，按片长、结束时间与字幕版本归档；修复片标注改动项，独播片标注可用窗口。</p>
+      </div>
+      <div class="foot-col">
+        <h4>看片入口</h4>
+        <a href="/#overview">午夜场概览</a>
+        <a href="/#picks">深夜精选</a>
+        <a href="/#latest">本周更新</a>
+        <a href="/#channels">频道分类</a>
+      </div>
+      <div class="foot-col">
+        <h4>深度与指南</h4>
+        <a href="/#deep">片长与窗口解析</a>
+        <a href="/#guide">深夜看片五步</a>
+        <a href="/#faq">字幕与画幅问答</a>
+        <a href="/#rank">午夜场口碑榜</a>
+      </div>
+      <div class="foot-col">
+        <h4>互动</h4>
+        <a href="/#comments">用户评论</a>
+        <a href="/#news">相关资讯</a>
+        <a href="/#related">相关推荐</a>
+        <a href="/#top">回到页首</a>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span class="demo">示例数据说明：片名、评分、场次与评论均为示例内容，用于展示栏目结构，不代表真实片源授权。</span>
+      <span>更新时间 2026-11-08 · 对应正文「本周更新」与「口碑榜」条目</span>
+    </div>
+  </div>
+</footer>
+
+<button id="toTop" aria-label="回到顶部">↑</button>
+
+<script>
+(function(){
+  var menuBtn = document.getElementById('menuBtn');
+  var mainNav = document.getElementById('mainNav');
+  if(menuBtn && mainNav){
+    menuBtn.addEventListener('click', function(){
+      var open = mainNav.classList.toggle('open');
+      menuBtn.setAttribute('aria-expanded', open ? 'true' : 'false');
+    });
+    mainNav.addEventListener('click', function(e){
+      if(e.target.tagName === 'A' && window.innerWidth <= 760){
+        mainNav.classList.remove('open');
+        menuBtn.setAttribute('aria-expanded','false');
+      }
+    });
+    document.addEventListener('keydown', function(e){
+      if(e.key === 'Escape' && mainNav.classList.contains('open')){
+        mainNav.classList.remove('open');
+        menuBtn.setAttribute('aria-expanded','false');
+        menuBtn.focus();
+      }
+    });
+  }
+
+  var toTop = document.getElementById('toTop');
+  var sideLinks = Array.prototype.slice.call(document.querySelectorAll('#sideNav a'));
+  var sections = sideLinks.map(function(a){
+    var id = a.getAttribute('href').replace('/#','');
+    return document.getElementById(id);
+  });
+
+  function onScroll(){
+    if(window.scrollY > 520){ toTop.classList.add('show'); }
+    else{ toTop.classList.remove('show'); }
+
+    var pos = window.scrollY + 150;
+    var idx = -1;
+    for(var i=0;i<sections.length;i++){
+      if(sections[i] && sections[i].offsetTop <= pos){ idx = i; }
+    }
+    sideLinks.forEach(function(a,i){
+      a.classList.toggle('hl', i === idx);
+    });
+  }
+  window.addEventListener('scroll', onScroll, {passive:true});
+  onScroll();
+
+  toTop.addEventListener('click', function(){
+    window.scrollTo({top:0, behavior:'smooth'});
+  });
+
+  var q = document.getElementById('q');
+  var qBtn = document.getElementById('qBtn');
+  var fb = document.getElementById('searchFb');
+
+  var index = [];
+  document.querySelectorAll('main h3, main .cat-item b, main .tag-cloud a, main summary, main .rank-list b, main .news-item h3').forEach(function(el){
+    var text = el.textContent.trim();
+    if(text){ index.push({text:text, el:el}); }
+  });
+
+  function doSearch(){
+    var kw = q.value.trim().toLowerCase();
+    if(!kw){
+      fb.classList.remove('show');
+      return;
+    }
+    var hits = index.filter(function(item){
+      return item.text.toLowerCase().indexOf(kw) !== -1;
+    });
+    fb.classList.add('show');
+    if(hits.length === 0){
+      fb.innerHTML = '没有找到「<b>' + escapeHtml(q.value.trim()) + '</b>」相关条目，试试片名、导演或“短长片”“修复版”等关键词。';
+    }else{
+      var names = hits.slice(0,4).map(function(h){ return h.text; }).join('、');
+      fb.innerHTML = '找到 ' + hits.length + ' 条相关条目：' + escapeHtml(names) + (hits.length > 4 ? ' 等' : '') + '。滚动页面查看对应板块。';
+      hits[0].el.scrollIntoView({behavior:'smooth', block:'center'});
+    }
+  }
+  function escapeHtml(s){
+    return s.replace(/[&<>"']/g, function(c){
+      return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c];
+    });
+  }
+  if(qBtn){ qBtn.addEventListener('click', doSearch); }
+  if(q){
+    q.addEventListener('keydown', function(e){
+      if(e.key === 'Enter'){ doSearch(); }
+    });
+    q.addEventListener('input', function(){
+      if(!q.value.trim()){ fb.classList.remove('show'); }
+    });
+  }
+})();
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "西瓜午夜免费影院",
+  "description": "整理深夜可看的中外片单、午夜场排片与观影指南的示例站点。",
+  "inLanguage": "zh-CN",
+  "url": "https://example.com/"
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "午夜场和凌晨场的分界线在哪一刻？",
+      "acceptedAnswer": {"@type": "Answer", "text": "片单以 02:00 作为分界。23:00—02:00 开场的场次算午夜场，02:00 之后算凌晨场。"}
+    },
+    {
+      "@type": "Question",
+      "name": "修复版《暗巷枪声》和 2016 年 DVD 版差在哪三处？",
+      "acceptedAnswer": {"@type": "Answer", "text": "画幅从裁切的 1.33:1 恢复到 1.85:1；声音轨由重新配乐换回原声磁转数；补回院线删掉的 3 分钟巷战。"}
+    },
+    {
+      "@type": "Question",
+      "name": "独播片过了 02:00 还能看吗？",
+      "acceptedAnswer": {"@type": "Answer", "text": "不能。片单里的 7 条独播片在平台页声明可用窗口为 23:00—02:00。"}
+    },
+    {
+      "@type": "Question",
+      "name": "90 分钟以内的片子只有惊悚类型吗？",
+      "acceptedAnswer": {"@type": "Answer", "text": "不是。21 条短长片中惊悚 9 条、悬疑 4 条、文艺 5 条、纪录片 3 条。"}
+    },
+    {
+      "@type": "Question",
+      "name": "为什么有些条目没有剧照？",
+      "acceptedAnswer": {"@type": "Answer", "text": "片源方未提供剧照授权，条目页改用文字描述替代。"}
+    },
+    {
+      "@type": "Question",
+      "name": "评分是怎么来的？",
+      "acceptedAnswer": {"@type": "Answer", "text": "按条目页的用户评分聚合，样本少于 50 人的条目不显示分数。"}
+    }
+  ]
+}
+</script>
+</body>
+  </html>
