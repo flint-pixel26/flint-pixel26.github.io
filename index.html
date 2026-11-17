@@ -1,0 +1,1419 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>51cg免费在线观看-高清影视在线观看指南与片单</title>
+<meta name="description" content="51cg免费在线观看是聚焦高清影视在线观看的指南页：整理在线观看片单、播放线路选择、画质与加载速度判断、字幕与设备适配，并附可核对的更新时间与观众反馈，帮助挑选适合当天下饭的剧集与电影。">
+<meta name="keywords" content="51cg免费在线观看">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230f2a3d'/%3E%3Cpath d='M20 18l26 14-26 14z' fill='%23f2b544'/%3E%3C/svg%3E">
+<style>
+:root{
+  --ink:#12202b;
+  --ink-2:#2f4553;
+  --muted:#5f7281;
+  --line:#d8e1e7;
+  --line-strong:#b9c8d2;
+  --bg:#f6f8fa;
+  --panel:#ffffff;
+  --panel-2:#eef3f6;
+  --brand:#0f2a3d;
+  --brand-2:#1c4a66;
+  --accent:#c8961f;
+  --accent-soft:#f7ebcb;
+  --good:#2f7d5a;
+  --warn:#a4552b;
+  --radius:14px;
+  --radius-sm:8px;
+  --shadow:0 1px 2px rgba(18,32,43,.06),0 8px 24px rgba(18,32,43,.07);
+  --shadow-sm:0 1px 2px rgba(18,32,43,.08);
+  --fs-1:clamp(1.9rem,4.2vw,2.9rem);
+  --fs-2:clamp(1.35rem,2.6vw,1.7rem);
+  --fs-3:1.12rem;
+  --fs-body:1rem;
+  --fs-sm:.9rem;
+  --fs-xs:.8rem;
+  --sp:clamp(.85rem,2vw,1.1rem);
+  --maxw:1180px;
+  --sticky-h:112px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  margin:0;
+  font-family:"PingFang SC","Hiragino Sans GB","Microsoft YaHei","Source Han Sans SC",system-ui,sans-serif;
+  color:var(--ink);
+  background:var(--bg);
+  line-height:1.75;
+  font-size:var(--fs-body);
+  overflow-x:hidden;
+}
+img{max-width:100%;display:block}
+a{color:var(--brand-2);text-decoration:none}
+a:hover{text-decoration:underline}
+:focus-visible{outline:3px solid var(--accent);outline-offset:2px;border-radius:4px}
+h1,h2,h3,h4{margin:0;line-height:1.35;font-weight:700;letter-spacing:.01em}
+p{margin:0 0 .85em}
+ul,ol{margin:0 0 .9em;padding-left:1.3em}
+li{margin-bottom:.35em}
+[hidden]{display:none !important}
+
+/* 吸顶公告条 + 页头 */
+.sticky-shell{
+  position:sticky;top:0;z-index:60;
+  background:var(--panel);
+  box-shadow:0 2px 10px rgba(18,32,43,.09);
+}
+.notice-bar{
+  background:var(--brand);
+  color:#e9f1f5;
+  font-size:var(--fs-sm);
+}
+.notice-inner{
+  max-width:var(--maxw);margin:0 auto;
+  padding:.5rem var(--sp);
+  display:flex;gap:.75rem;align-items:center;flex-wrap:wrap;
+}
+.notice-tag{
+  background:var(--accent);color:#2b1e02;
+  font-weight:700;font-size:var(--fs-xs);
+  padding:.1rem .5rem;border-radius:999px;letter-spacing:.02em;
+  flex:none;
+}
+.notice-inner p{margin:0}
+.notice-links{display:flex;gap:.85rem;flex-wrap:wrap;margin-left:auto}
+.notice-links a{color:#f2e2b8;font-size:var(--fs-xs)}
+.site-header{
+  background:var(--panel);
+  border-bottom:1px solid var(--line);
+}
+.header-inner{
+  max-width:var(--maxw);margin:0 auto;
+  padding:.6rem var(--sp);
+  display:flex;align-items:center;gap:1rem;
+}
+.brand{display:flex;align-items:center;gap:.6rem;flex:none}
+.brand:hover{text-decoration:none}
+.brand-mark{width:38px;height:38px;flex:none}
+.brand-text{display:flex;flex-direction:column;line-height:1.15}
+.brand-name{font-weight:800;font-size:1.06rem;color:var(--brand);letter-spacing:.01em}
+.brand-sub{font-size:var(--fs-xs);color:var(--muted);letter-spacing:.06em}
+.main-nav{margin-left:auto}
+.nav-toggle{
+  display:none;
+  background:var(--panel-2);
+  border:1px solid var(--line-strong);
+  border-radius:var(--radius-sm);
+  padding:.42rem .7rem;
+  font:inherit;font-size:var(--fs-sm);
+  color:var(--ink);cursor:pointer;
+}
+.nav-list{
+  display:flex;gap:.2rem;list-style:none;margin:0;padding:0;flex-wrap:wrap;
+}
+.nav-list a{
+  display:block;padding:.42rem .58rem;border-radius:var(--radius-sm);
+  font-size:var(--fs-sm);color:var(--ink-2);white-space:nowrap;
+}
+.nav-list a:hover,.nav-list a[aria-current="true"]{
+  background:var(--panel-2);color:var(--brand);text-decoration:none;
+}
+.header-tools{display:flex;align-items:center;gap:.5rem;flex:none}
+.search-box{display:flex;align-items:center;border:1px solid var(--line-strong);border-radius:999px;background:var(--panel-2);padding:.16rem .2rem .16rem .7rem}
+.search-box input{
+  border:0;background:transparent;font:inherit;font-size:var(--fs-sm);
+  width:132px;padding:.28rem 0;color:var(--ink);
+}
+.search-box input:focus{outline:none}
+.search-box button{
+  border:0;background:var(--brand);color:#fff;
+  border-radius:999px;padding:.32rem .68rem;font:inherit;font-size:var(--fs-xs);
+  cursor:pointer;
+}
+.search-status{
+  max-width:var(--maxw);margin:0 auto;padding:0 var(--sp) .5rem;
+  font-size:var(--fs-xs);color:var(--warn);
+}
+
+/* 首屏 */
+.hero{
+  background:
+    radial-gradient(1100px 380px at 82% -12%, rgba(200,150,31,.20), transparent 62%),
+    linear-gradient(165deg,#0d2434 0%,#123449 52%,#17455e 100%);
+  color:#eef5f8;
+  position:relative;
+  overflow:hidden;
+}
+.hero::after{
+  content:"";
+  position:absolute;inset:auto -60px -120px auto;
+  width:420px;height:420px;border-radius:50%;
+  border:1px solid rgba(242,213,150,.22);
+  pointer-events:none;
+}
+.hero-inner{
+  max-width:var(--maxw);margin:0 auto;
+  padding:clamp(1.8rem,5vw,3.4rem) var(--sp) clamp(1.6rem,4vw,2.6rem);
+  display:grid;grid-template-columns:minmax(0,1.35fr) minmax(0,.85fr);
+  gap:clamp(1.2rem,3vw,2.6rem);align-items:center;
+  position:relative;z-index:1;
+}
+.hero-kicker{
+  display:inline-flex;align-items:center;gap:.5rem;
+  font-size:var(--fs-xs);letter-spacing:.14em;color:#f2d596;
+  border:1px solid rgba(242,213,150,.4);border-radius:999px;
+  padding:.22rem .68rem;margin-bottom:1rem;
+}
+.hero h1{
+  font-size:var(--fs-1);
+  color:#fff;margin-bottom:.7rem;
+  letter-spacing:.01em;
+}
+.hero-lede{
+  color:#cddde6;max-width:46ch;font-size:1.02rem;
+}
+.hero-facts{
+  display:flex;flex-wrap:wrap;gap:.5rem .9rem;
+  margin:1.1rem 0 1.4rem;padding:0;list-style:none;
+  font-size:var(--fs-sm);color:#dbe7ed;
+}
+.hero-facts li{display:flex;align-items:center;gap:.4rem;margin:0}
+.hero-facts b{color:#f6dfa9;font-size:1.02rem;font-variant-numeric:tabular-nums}
+.hero-cta{display:flex;gap:.6rem;flex-wrap:wrap}
+.btn{
+  display:inline-flex;align-items:center;gap:.4rem;
+  border-radius:999px;padding:.62rem 1.15rem;
+  font-size:var(--fs-sm);font-weight:600;
+  border:1px solid transparent;cursor:pointer;
+  transition:transform .18s ease,background .18s ease,color .18s ease;
+}
+.btn:hover{text-decoration:none;transform:translateY(-2px)}
+.btn-primary{background:var(--accent);color:#2b1e02}
+.btn-ghost{background:transparent;color:#eaf2f6;border-color:rgba(234,242,246,.42)}
+.btn-ghost:hover{background:rgba(234,242,246,.12);color:#fff}
+.hero-visual{position:relative}
+.hero-card{
+  background:rgba(10,31,45,.72);
+  border:1px solid rgba(198,222,235,.22);
+  border-radius:var(--radius);
+  padding:1rem;
+  box-shadow:0 18px 40px rgba(0,0,0,.28);
+  backdrop-filter:blur(3px);
+}
+.hero-card h2{
+  font-size:.88rem;font-weight:600;color:#f2d596;
+  letter-spacing:.08em;margin-bottom:.7rem;
+}
+.tiny-rows{list-style:none;margin:0;padding:0;font-size:var(--fs-xs);color:#d3e2ea}
+.tiny-rows li{
+  display:flex;gap:.55rem;align-items:baseline;
+  padding:.4rem 0;border-bottom:1px dashed rgba(198,222,235,.2);
+  margin:0;
+}
+.tiny-rows li:last-child{border-bottom:0}
+.tiny-rows .t{color:#8fb2c4;flex:none;font-variant-numeric:tabular-nums}
+.tiny-rows .n{color:#fff;font-weight:600}
+.hero-strip{
+  margin-top:.85rem;display:grid;grid-template-columns:repeat(3,1fr);
+  gap:.45rem;
+}
+.hero-chip{
+  background:rgba(255,255,255,.07);
+  border:1px solid rgba(198,222,235,.18);
+  border-radius:var(--radius-sm);
+  padding:.45rem .5rem;text-align:center;
+}
+.hero-chip b{display:block;font-size:1.05rem;color:#f6dfa9;font-variant-numeric:tabular-nums}
+.hero-chip span{font-size:.68rem;color:#a9c4d2;letter-spacing:.04em}
+
+/* 布局 */
+.layout{
+  max-width:var(--maxw);margin:0 auto;
+  padding:clamp(1.4rem,3vw,2.4rem) var(--sp) 2.4rem;
+  display:grid;grid-template-columns:minmax(0,1fr) 284px;
+  gap:clamp(1.2rem,2.6vw,2rem);align-items:start;
+}
+.main-col{min-width:0}
+.kw{color:#8a5a00;background:var(--accent-soft);border-bottom:2px solid var(--accent);padding:0 .12em;border-radius:3px;font-weight:600}
+.side-col{display:flex;flex-direction:column;gap:1rem;min-width:0}
+
+/* 板块通用 */
+.section{
+  background:var(--panel);
+  border:1px solid var(--line);
+  border-radius:var(--radius);
+  padding:clamp(1rem,2.4vw,1.5rem);
+  margin-bottom:clamp(1rem,2.4vw,1.4rem);
+  scroll-margin-top:calc(var(--sticky-h) + 14px);
+  box-shadow:var(--shadow-sm);
+}
+.section-head{
+  display:flex;flex-wrap:wrap;align-items:baseline;gap:.5rem .8rem;
+  margin-bottom:1rem;padding-bottom:.7rem;border-bottom:1px solid var(--line);
+}
+.section-head h2{font-size:var(--fs-2);color:var(--brand)}
+.section-head .sub{font-size:var(--fs-sm);color:var(--muted);margin:0}
+.section-head .more{margin-left:auto;font-size:var(--fs-sm)}
+.eyebrow{font-size:var(--fs-xs);letter-spacing:.1em;color:var(--accent);font-weight:700;text-transform:uppercase}
+
+/* 领域概览 */
+.overview-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:.8rem}
+.ov-item{border-left:3px solid var(--accent);background:var(--panel-2);border-radius:0 var(--radius-sm) var(--radius-sm) 0;padding:.7rem .85rem}
+.ov-item h3{font-size:1rem;margin-bottom:.25rem}
+.ov-item p{margin:0;font-size:var(--fs-sm);color:var(--ink-2)}
+
+/* 精选卡片 */
+.card-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:.9rem}
+.card{
+  border:1px solid var(--line);border-radius:var(--radius);
+  overflow:hidden;background:var(--panel);
+  display:flex;flex-direction:column;
+  transition:transform .18s ease,box-shadow .18s ease;
+}
+.card:hover{transform:translateY(-3px);box-shadow:var(--shadow)}
+.card img{width:100%;height:132px;object-fit:cover;background:var(--panel-2)}
+.card-body{padding:.7rem .85rem .85rem;display:flex;flex-direction:column;gap:.35rem;flex:1}
+.card-body h3{font-size:1rem}
+.card-body h3 a{color:var(--ink)}
+.card-body p{margin:0;font-size:var(--fs-sm);color:var(--ink-2)}
+.card-meta{display:flex;flex-wrap:wrap;gap:.35rem;margin-top:auto;padding-top:.4rem;font-size:var(--fs-xs);color:var(--muted)}
+.pill{
+  display:inline-block;background:var(--panel-2);border:1px solid var(--line);
+  border-radius:999px;padding:.05rem .5rem;font-size:var(--fs-xs);color:var(--ink-2);
+  margin:0 .28rem .28rem 0;
+}
+.pill.gold{background:var(--accent-soft);border-color:#e4cd94;color:#7a5300}
+
+/* 最新更新紧凑列表 */
+.update-list{list-style:none;margin:0;padding:0}
+.update-list li{
+  display:grid;grid-template-columns:78px minmax(0,1fr);gap:.7rem;
+  padding:.6rem 0;border-bottom:1px dashed var(--line);margin:0;
+}
+.update-list li:last-child{border-bottom:0}
+.update-list time{font-size:var(--fs-xs);color:var(--accent);font-weight:700;font-variant-numeric:tabular-nums;padding-top:.15rem}
+.update-list .u-title{font-weight:600;color:var(--ink);font-size:var(--fs-sm)}
+.update-list .u-desc{margin:0;font-size:var(--fs-xs);color:var(--muted)}
+
+/* 分类入口 / 标签索引 */
+.cat-index{display:flex;flex-wrap:wrap;gap:.45rem}
+.cat-index a{
+  display:inline-flex;align-items:center;gap:.35rem;
+  border:1px solid var(--line-strong);border-radius:999px;
+  padding:.34rem .8rem;font-size:var(--fs-sm);color:var(--ink-2);
+  background:var(--panel);
+  transition:background .15s ease,transform .15s ease;
+}
+.cat-index a:hover{background:var(--panel-2);text-decoration:none;transform:translateY(-1px)}
+.cat-index .cnt{font-size:var(--fs-xs);color:var(--muted)}
+
+/* 深度解析 */
+.deep{display:grid;grid-template-columns:minmax(0,1fr);gap:1rem}
+.deep-lead{
+  background:var(--panel-2);border:1px solid var(--line);
+  border-radius:var(--radius);padding:.9rem 1rem;
+  font-size:var(--fs-sm);color:var(--ink-2);
+}
+.deep h3{font-size:var(--fs-3);color:var(--brand);margin:1.2rem 0 .5rem}
+.deep h3:first-of-type{margin-top:0}
+.claim-table{width:100%;border-collapse:collapse;font-size:var(--fs-sm);margin:.5rem 0 1rem}
+.claim-table th,.claim-table td{border:1px solid var(--line);padding:.45rem .6rem;text-align:left;vertical-align:top}
+.claim-table th{background:var(--panel-2);font-weight:700;color:var(--ink-2);white-space:nowrap}
+.claim-table caption{caption-side:top;text-align:left;font-size:var(--fs-xs);color:var(--muted);padding-bottom:.3rem}
+.quote-card{
+  border-left:4px solid var(--brand-2);
+  background:linear-gradient(180deg,var(--panel-2),#fff);
+  padding:.85rem 1rem;border-radius:0 var(--radius-sm) var(--radius-sm) 0;
+  margin:.8rem 0;
+}
+.quote-card p{margin:0;font-size:var(--fs-sm);color:var(--ink-2)}
+.quote-card cite{display:block;margin-top:.4rem;font-size:var(--fs-xs);color:var(--muted);font-style:normal}
+
+/* 步骤 */
+.steps{list-style:none;counter-reset:st;margin:0;padding:0;display:grid;gap:.7rem}
+.steps li{
+  counter-increment:st;position:relative;
+  padding:.75rem .85rem .75rem 3rem;border:1px solid var(--line);
+  border-radius:var(--radius-sm);background:var(--panel);margin:0;
+}
+.steps li::before{
+  content:counter(st,decimal-leading-zero);
+  position:absolute;left:.75rem;top:.72rem;
+  width:1.6rem;height:1.6rem;border-radius:50%;
+  background:var(--brand);color:#f6dfa9;
+  display:grid;place-items:center;font-size:.72rem;font-weight:700;
+  font-variant-numeric:tabular-nums;
+}
+.steps h4{font-size:.98rem;margin-bottom:.2rem}
+.steps p{margin:0;font-size:var(--fs-sm);color:var(--ink-2)}
+
+/* 对照面板 */
+.compare{display:grid;grid-template-columns:1fr 1fr;gap:.8rem}
+.compare-panel{border:1px solid var(--line);border-radius:var(--radius);overflow:hidden}
+.compare-panel h4{
+  margin:0;padding:.55rem .8rem;font-size:.95rem;
+  background:var(--panel-2);border-bottom:1px solid var(--line);color:var(--brand);
+}
+.compare-panel.a h4{background:var(--accent-soft);color:#6b4a00}
+.compare-panel ul{list-style:none;margin:0;padding:.6rem .85rem;font-size:var(--fs-sm)}
+.compare-panel li{padding:.3rem 0;border-bottom:1px dashed var(--line);margin:0}
+.compare-panel li:last-child{border-bottom:0}
+.compare-panel li b{color:var(--ink)}
+
+/* FAQ */
+.faq details{border:1px solid var(--line);border-radius:var(--radius-sm);margin-bottom:.55rem;background:var(--panel)}
+.faq details[open]{border-color:var(--line-strong);box-shadow:var(--shadow-sm)}
+.faq summary{
+  cursor:pointer;padding:.7rem .85rem;font-weight:600;font-size:var(--fs-sm);
+  list-style:none;display:flex;gap:.6rem;align-items:flex-start;color:var(--ink);
+}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::before{content:"＋";color:var(--accent);font-weight:700;flex:none;line-height:1.4}
+.faq details[open] summary::before{content:"－"}
+.faq .faq-body{padding:0 .85rem .8rem 2.05rem;font-size:var(--fs-sm);color:var(--ink-2)}
+.faq .faq-body p{margin:0 0 .5rem}
+.faq .faq-body p:last-child{margin-bottom:0}
+
+/* 评论 */
+.comments{display:grid;gap:.7rem}
+.comment{
+  border:1px solid var(--line);border-radius:var(--radius-sm);
+  padding:.7rem .85rem;background:var(--panel);
+}
+.comment-head{display:flex;flex-wrap:wrap;gap:.4rem .7rem;align-items:baseline;margin-bottom:.3rem}
+.comment-head .who{font-weight:700;font-size:var(--fs-sm);color:var(--brand)}
+.comment-head .when{font-size:var(--fs-xs);color:var(--muted)}
+.comment-head .tag{font-size:var(--fs-xs);border-radius:999px;padding:.02rem .45rem;background:var(--panel-2);color:var(--ink-2)}
+.comment-head .tag.neg{background:#fbe9e2;color:#8c3f1d}
+.comment-head .tag.pos{background:#e3f1e9;color:#1f6647}
+.comment p{margin:0;font-size:var(--fs-sm);color:var(--ink-2)}
+
+/* 资讯 */
+.news-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:.8rem}
+.news-card{border:1px solid var(--line);border-radius:var(--radius);padding:.8rem .9rem;background:var(--panel)}
+.news-card .src{font-size:var(--fs-xs);color:var(--accent);font-weight:700;letter-spacing:.03em}
+.news-card h3{font-size:1rem;margin:.3rem 0 .4rem}
+.news-card h3 a{color:var(--ink)}
+.news-card p{margin:0;font-size:var(--fs-sm);color:var(--ink-2)}
+
+/* 相关推荐 */
+.tags-cloud{display:flex;flex-wrap:wrap;gap:.45rem}
+.tags-cloud a{
+  border:1px dashed var(--line-strong);border-radius:999px;
+  padding:.3rem .75rem;font-size:var(--fs-sm);color:var(--ink-2);background:var(--panel);
+}
+.tags-cloud a:hover{background:var(--accent-soft);border-color:#e0c78d;text-decoration:none;color:#6b4a00}
+
+/* 榜单 */
+.rank-list{list-style:none;margin:0;padding:0;counter-reset:rk}
+.rank-list li{
+  counter-increment:rk;display:grid;grid-template-columns:auto minmax(0,1fr) auto;
+  gap:.6rem;align-items:center;padding:.55rem 0;border-bottom:1px dashed var(--line);margin:0;
+}
+.rank-list li:last-child{border-bottom:0}
+.rank-list li::before{
+  content:counter(rk);flex:none;width:1.6rem;height:1.6rem;border-radius:var(--radius-sm);
+  background:var(--panel-2);border:1px solid var(--line);
+  display:grid;place-items:center;font-size:.76rem;font-weight:700;color:var(--brand);
+  font-variant-numeric:tabular-nums;
+}
+.rank-list li:nth-child(1)::before{background:var(--brand);color:#f6dfa9;border-color:var(--brand)}
+.rank-list .rk-name{font-size:var(--fs-sm);font-weight:600}
+.rank-list .rk-note{display:block;font-size:var(--fs-xs);color:var(--muted);font-weight:400}
+.rank-list .rk-val{font-size:var(--fs-xs);color:var(--accent);font-variant-numeric:tabular-nums;font-weight:700}
+
+/* 侧栏 */
+.side-card{
+  background:var(--panel);border:1px solid var(--line);
+  border-radius:var(--radius);padding:.9rem 1rem;
+}
+.side-card h2,.side-card h3{font-size:.98rem;color:var(--brand);margin-bottom:.6rem}
+.side-nav{list-style:none;margin:0;padding:0;font-size:var(--fs-sm)}
+.side-nav li{margin:0}
+.side-nav a{
+  display:block;padding:.32rem .55rem;border-radius:var(--radius-sm);
+  color:var(--ink-2);border-left:3px solid transparent;
+}
+.side-nav a:hover{background:var(--panel-2);text-decoration:none}
+.side-nav a.active{background:var(--accent-soft);border-left-color:var(--accent);color:#6b4a00;font-weight:700}
+.side-card .side-note{font-size:var(--fs-xs);color:var(--muted);margin:.5rem 0 0}
+.side-list{list-style:none;margin:0;padding:0;font-size:var(--fs-sm)}
+.side-list li{padding:.4rem 0;border-bottom:1px dashed var(--line);margin:0}
+.side-list li:last-child{border-bottom:0}
+.side-list a{color:var(--ink-2)}
+.side-list .sm{display:block;font-size:var(--fs-xs);color:var(--muted)}
+
+/* 页尾 */
+.site-footer{
+  background:var(--brand);color:#c9dae4;
+  margin-top:1.4rem;
+}
+.footer-inner{
+  max-width:var(--maxw);margin:0 auto;
+  padding:2rem var(--sp) 1.2rem;
+}
+.footer-top{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,1.7fr);gap:1.6rem;padding-bottom:1.4rem;border-bottom:1px solid rgba(201,218,228,.2)}
+.footer-brand{display:flex;gap:.65rem;align-items:flex-start}
+.footer-brand .brand-mark{width:42px;height:42px}
+.footer-brand .fn{color:#fff;font-weight:800;font-size:1.08rem;letter-spacing:.01em}
+.footer-tagline{margin:.5rem 0 0;font-size:var(--fs-sm);color:#a9c4d2;max-width:32ch}
+.footer-cols{display:grid;grid-template-columns:repeat(auto-fit,minmax(130px,1fr));gap:1rem}
+.footer-cols h3{font-size:var(--fs-sm);color:#f2d596;margin-bottom:.5rem;letter-spacing:.04em}
+.footer-cols ul{list-style:none;margin:0;padding:0;font-size:var(--fs-sm)}
+.footer-cols li{margin-bottom:.32rem}
+.footer-cols a{color:#c9dae4}
+.footer-cols a:hover{color:#fff}
+.footer-note{
+  padding-top:1rem;font-size:var(--fs-xs);color:#93b0c1;line-height:1.8;
+}
+.footer-note p{margin:0 0 .4rem}
+.footer-bottom{
+  max-width:var(--maxw);margin:0 auto;padding:.9rem var(--sp) 1.4rem;
+  font-size:var(--fs-xs);color:#8fa9ba;
+  display:flex;flex-wrap:wrap;gap:.5rem 1rem;justify-content:space-between;
+  border-top:1px solid rgba(201,218,228,.14);
+}
+
+/* 回到顶部 */
+.to-top{
+  position:fixed;right:16px;bottom:18px;z-index:70;
+  width:44px;height:44px;border-radius:50%;
+  border:1px solid var(--line-strong);
+  background:var(--panel);color:var(--brand);
+  font-size:1.1rem;line-height:1;cursor:pointer;
+  box-shadow:var(--shadow);
+  display:grid;place-items:center;
+  opacity:0;transform:translateY(10px);pointer-events:none;
+  transition:opacity .2s ease,transform .2s ease;
+}
+.to-top.show{opacity:1;transform:none;pointer-events:auto}
+
+/* 响应式 */
+@media (max-width:980px){
+  .layout{grid-template-columns:minmax(0,1fr)}
+  .side-col{order:2}
+  .hero-inner{grid-template-columns:minmax(0,1fr)}
+  .hero-visual{order:2}
+  .footer-top{grid-template-columns:minmax(0,1fr)}
+  .compare{grid-template-columns:1fr}
+}
+@media (max-width:760px){
+  :root{--sticky-h:104px}
+  .header-inner{flex-wrap:wrap;row-gap:.5rem}
+  .nav-toggle{display:inline-block;order:3}
+  .header-tools{order:2;margin-left:auto}
+  .main-nav{order:4;width:100%;margin-left:0}
+  .main-nav[data-open="false"] .nav-list{display:none}
+  .nav-list{flex-direction:column;gap:0;padding:.3rem 0 .4rem}
+  .nav-list a{padding:.55rem .6rem;border-radius:var(--radius-sm);white-space:normal}
+  .search-box input{width:96px}
+  .notice-links{margin-left:0}
+  .update-list li{grid-template-columns:66px minmax(0,1fr)}
+  .hero-facts{font-size:var(--fs-xs)}
+  .card img{height:118px}
+}
+@media (max-width:380px){
+  .brand-sub{display:none}
+  .search-box input{width:76px}
+  .hero-strip{grid-template-columns:1fr 1fr}
+}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  *,*::before,*::after{transition:none !important;animation:none !important}
+  .btn:hover,.card:hover,.cat-index a:hover{transform:none}
+}
+</style>
+<script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+</head>
+<body>
+
+<div class="sticky-shell">
+  <div class="notice-bar" role="region" aria-label="站点更新公告">
+    <div class="notice-inner">
+      <span class="notice-tag">更新</span>
+      <p>11月7日线路上新《长夜将尽》第7集，字幕轨补到S01E07；11月6日修复晚间20:00—22:00卡顿。</p>
+      <div class="notice-links">
+        <a href="/#updates">查看更新记录</a>
+        <a href="/#guide">播放设置指南</a>
+      </div>
+    </div>
+  </div>
+
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="/#top" aria-label="51cg免费在线观看 首页">
+        <svg class="brand-mark" viewBox="0 0 64 64" role="img" aria-label="品牌图形：播放键与胶片齿孔组成">
+          <rect width="64" height="64" rx="14" fill="#0f2a3d"/>
+          <rect x="9" y="12" width="6" height="6" rx="1.4" fill="#f2b544"/>
+          <rect x="9" y="24" width="6" height="6" rx="1.4" fill="#f2b544" opacity=".7"/>
+          <rect x="9" y="36" width="6" height="6" rx="1.4" fill="#f2b544" opacity=".5"/>
+          <rect x="9" y="48" width="6" height="6" rx="1.4" fill="#f2b544" opacity=".32"/>
+          <path d="M24 20l22 12-22 12z" fill="#f2b544"/>
+          <path d="M50 18v28" stroke="#c6deeb" stroke-width="2.4" stroke-linecap="round" opacity=".62"/>
+        </svg>
+        <span class="brand-text">
+          <span class="brand-name">51cg免费在线观看</span>
+          <span class="brand-sub">高清影视在线观看指南</span>
+        </span>
+      </a>
+
+      <nav class="main-nav" id="mainNav" data-open="true" aria-label="主题导航">
+        <ul class="nav-list">
+          <li><a href="/#overview">领域概览</a></li>
+          <li><a href="/#picks">精选片单</a></li>
+          <li><a href="/#updates">最新更新</a></li>
+          <li><a href="/#categories">分类入口</a></li>
+          <li><a href="/#deep">深度解析</a></li>
+          <li><a href="/#guide">体验指南</a></li>
+          <li><a href="/#faq">常见问题</a></li>
+          <li><a href="/#reviews">观众评论</a></li>
+          <li><a href="/#news">相关资讯</a></li>
+          <li><a href="/#rank">口碑榜单</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-tools">
+        <div class="search-box" role="search">
+          <label for="siteSearch" class="visually-hidden" style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)">站内找片</label>
+          <input id="siteSearch" type="search" placeholder="搜片名或类型" autocomplete="off">
+          <button type="button" id="searchBtn">查找</button>
+        </div>
+        <button class="nav-toggle" id="navToggle" type="button" aria-expanded="true" aria-controls="mainNav">栏目</button>
+      </div>
+    </div>
+    <div class="search-status" id="searchStatus" role="status" aria-live="polite"></div>
+  </header>
+</div>
+
+<main id="top">
+
+  <!-- 首屏 -->
+  <section class="hero" aria-labelledby="heroTitle">
+    <div class="hero-inner">
+      <div class="hero-copy">
+        <span class="hero-kicker">在线观看 · 片单与线路观察</span>
+        <h1 id="heroTitle">51cg免费在线观看</h1>
+        <p class="hero-lede">一份按“当天能不能顺畅看完”来组织的影视观看指南：归纳热播剧集、修复状态、字幕轨与设备适配，帮你在晚间高峰前先选好线路和片目。</p>
+        <ul class="hero-facts">
+          <li><b>12</b> 个常驻频道</li>
+          <li><b>48</b> 条片目记录</li>
+          <li><b>7</b> 天线路巡检</li>
+          <li><b>3</b> 档画质标注</li>
+        </ul>
+        <div class="hero-cta">
+          <a class="btn btn-primary" href="/#picks">看今日精选片单</a>
+          <a class="btn btn-ghost" href="/#updates">查11月7日更新</a>
+        </div>
+      </div>
+
+      <div class="hero-visual" aria-hidden="false">
+        <div class="hero-card">
+          <h2>晚间线路状态 · 11月7日 21:10</h2>
+          <ul class="tiny-rows">
+            <li><span class="t">20:42</span><span class="n">《长夜将尽》第7集</span><span>1080P 正常</span></li>
+            <li><span class="t">20:15</span><span class="n">《雾港档案》第3集</span><span>字幕轨已补</span></li>
+            <li><span class="t">19:50</span><span class="n">《铁轨以南》</span><span>720P 缓冲偏慢</span></li>
+            <li><span class="t">18:30</span><span class="n">《旧城食单》第12集</span><span>1080P 正常</span></li>
+          </ul>
+          <div class="hero-strip">
+            <div class="hero-chip"><b>4</b><span>今日修复</span></div>
+            <div class="hero-chip"><b>2</b><span>待确认</span></div>
+            <div class="hero-chip"><b>98%</b><span>可播记录</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="layout">
+    <div class="main-col">
+
+      <!-- 领域概览 -->
+      <section class="section" id="overview" aria-labelledby="overviewTitle">
+        <div class="section-head">
+          <span class="eyebrow">领域概览</span>
+          <h2 id="overviewTitle">在线观看这件事，先分清四种片源形态</h2>
+          <p class="sub">按播放稳定性与检索效率划分，不按平台大小划分</p>
+        </div>
+        <div class="overview-grid">
+          <div class="ov-item">
+            <h3>剧集连播型</h3>
+            <p>以《长夜将尽》《雾港档案》为代表，单集 42—48 分钟，更新节奏固定在工作日 20:00 前后，适合按集追。</p>
+          </div>
+          <div class="ov-item">
+            <h3>单片电影型</h3>
+            <p>《铁轨以南》这类 96—118 分钟单片，一次播完，对首帧加载速度最敏感，晚间易出现缓冲。</p>
+          </div>
+          <div class="ov-item">
+            <h3>短剧切片型</h3>
+            <p>单条 3—8 分钟，分 P 多，字幕依赖自动生成。切片清晰度常与主片不一致，需要单独核对。</p>
+          </div>
+          <div class="ov-item">
+            <h3>纪录片慢看型</h3>
+            <p>《旧城食单》一类 12 集，1080P 码率稳定，适合大屏与投屏；字幕多为人工校订。</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- 精选内容推荐 -->
+      <section class="section" id="picks" aria-labelledby="picksTitle">
+        <div class="section-head">
+          <span class="eyebrow">今日精选</span>
+          <h2 id="picksTitle">今天值得先点开的五部片目</h2>
+          <p class="sub">按 11月7日 20:00 的播放记录排序</p>
+          <a class="more" href="/#rank">看口碑榜单 →</a>
+        </div>
+        <div class="card-grid">
+          <article class="card">
+            <img src="https://picsum.photos/seed/51cg-changye/480/280" width="480" height="280" loading="lazy" alt="《长夜将尽》第7集片头雨夜长街画面">
+            <div class="card-body">
+              <h3><a href="/#updates">长夜将尽 第7集</a></h3>
+              <p>悬疑线在第7集收口，1998 年工厂旧案与当下时间线第一次对上。1080P 已修复，字幕轨同步。</p>
+              <div class="card-meta">
+                <span class="pill gold">今日首推</span>
+                <span>剧集 · 46 分钟</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="card">
+            <img src="https://picsum.photos/seed/51cg-wugang/480/280" width="480" height="280" loading="lazy" alt="《雾港档案》海边码头与档案柜构图">
+            <div class="card-body">
+              <h3><a href="/#news">雾港档案 第3集</a></h3>
+              <p>港务局旧档案调阅段，台词密度高。11月6日补上简体字幕，语速快的段落建议开 0.9 倍速。</p>
+              <div class="card-meta">
+                <span class="pill">字幕已补</span>
+                <span>剧集 · 43 分钟</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="card">
+            <img src="https://picsum.photos/seed/51cg-tiegui/480/280" width="480" height="280" loading="lazy" alt="《铁轨以南》夜间铁轨与小镇站台">
+            <div class="card-body">
+              <h3><a href="/#deep">铁轨以南</a></h3>
+              <p>118 分钟公路悬疑。前 20 分钟暗场多，手机小屏容易看不清表情，建议 1080P 或投屏观看。</p>
+              <div class="card-meta">
+                <span class="pill">缓冲偏慢</span>
+                <span>电影 · 118 分钟</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="card">
+            <img src="https://picsum.photos/seed/51cg-shiDan/480/280" width="480" height="280" loading="lazy" alt="《旧城食单》菜市场与旧灶台特写">
+            <div class="card-body">
+              <h3><a href="/#categories">旧城食单 第12集</a></h3>
+              <p>讲城南菜市场的四代摊主，收尾落在 2024 年改造后的摊位编号。画质稳定，适合吃饭时放。</p>
+              <div class="card-meta">
+                <span class="pill gold">下饭推荐</span>
+                <span>纪录片 · 38 分钟</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="card">
+            <img src="https://picsum.photos/seed/51cg-baifeng/480/280" width="480" height="280" loading="lazy" alt="《白风镇》山路与旧车站的黄昏画面">
+            <div class="card-body">
+              <h3><a href="/#reviews">白风镇 第1集</a></h3>
+              <p>新上线的 6 集短剧，单集 22 分钟。首集信息量偏少，第2集才进入主线，适合一次放两集。</p>
+              <div class="card-meta">
+                <span class="pill">新片</span>
+                <span>短剧 · 22 分钟</span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- 最新更新 -->
+      <section class="section" id="updates" aria-labelledby="updatesTitle">
+        <div class="section-head">
+          <span class="eyebrow">更新记录</span>
+          <h2 id="updatesTitle">11月1日至11月7日的片目变动</h2>
+          <p class="sub">时间以页面核对为准，非推送时间</p>
+        </div>
+        <ul class="update-list">
+          <li>
+            <time datetime="2026-11-07">11月7日</time>
+            <div>
+              <div class="u-title">《长夜将尽》第7集上线，1080P 与字幕轨同步</div>
+              <p class="u-desc">第7集 46 分 12 秒，片头 14 秒工厂旧档画面已替换为 2023 年修复版。</p>
+            </div>
+          </li>
+          <li>
+            <time datetime="2026-11-06">11月6日</time>
+            <div>
+              <div class="u-title">《雾港档案》第3集补齐简体字幕</div>
+              <p class="u-desc">原字幕缺 18:32—19:05 一段，重压后总时长不变，建议清除缓存再播。</p>
+            </div>
+          </li>
+          <li>
+            <time datetime="2026-11-05">11月5日</time>
+            <div>
+              <div class="u-title">《旧城食单》第12集改为 1080P 主线路</div>
+              <p class="u-desc">原 720P 线路保留作备用，投屏用户请手动选“高清”选项。</p>
+            </div>
+          </li>
+          <li>
+            <time datetime="2026-11-04">11月4日</time>
+            <div>
+              <div class="u-title">《白风镇》全 6 集上架</div>
+              <p class="u-desc">单集 22 分钟，第6集 11月4日 18:00 后可播，字幕为自动生成加人工抽检。</p>
+            </div>
+          </li>
+          <li>
+            <time datetime="2026-11-02">11月2日</time>
+            <div>
+              <div class="u-title">《铁轨以南》夜间缓冲反馈核实</div>
+              <p class="u-desc">20:00—22:00 平均首帧 4.8 秒，高于平日 2.1 秒，暂列为待观察。</p>
+            </div>
+          </li>
+          <li>
+            <time datetime="2026-11-01">11月1日</time>
+            <div>
+              <div class="u-title">《雪线邮路》纪录片全 8 集归档</div>
+              <p class="u-desc">每集 30 分钟，人工字幕，标记为“慢看型”，不再参与每日推荐。</p>
+            </div>
+          </li>
+        </ul>
+      </section>
+
+      <!-- 分类入口 -->
+      <section class="section" id="categories" aria-labelledby="categoriesTitle">
+        <div class="section-head">
+          <span class="eyebrow">分类索引</span>
+          <h2 id="categoriesTitle">按题材与观看场景找片</h2>
+          <p class="sub">括号内为当前收录条目数，每周日重算</p>
+        </div>
+        <div class="cat-index">
+          <a href="/#picks">悬疑剧集 <span class="cnt">14</span></a>
+          <a href="/#picks">犯罪纪实 <span class="cnt">9</span></a>
+          <a href="/#picks">都市情感 <span class="cnt">11</span></a>
+          <a href="/#updates">工厂年代剧 <span class="cnt">6</span></a>
+          <a href="/#picks">公路电影 <span class="cnt">7</span></a>
+          <a href="/#updates">美食纪录片 <span class="cnt">8</span></a>
+          <a href="/#reviews">短剧切片 <span class="cnt">17</span></a>
+          <a href="/#news">港城题材 <span class="cnt">5</span></a>
+          <a href="/#rank">高口碑老片 <span class="cnt">13</span></a>
+          <a href="/#guide">投屏适配片 <span class="cnt">10</span></a>
+          <a href="/#guide">字幕友好片 <span class="cnt">12</span></a>
+          <a href="/#updates">本周新上 <span class="cnt">4</span></a>
+        </div>
+      </section>
+
+      <!-- 深度解析 -->
+      <section class="section deep" id="deep" aria-labelledby="deepTitle">
+        <div class="section-head">
+          <span class="eyebrow">深度解析</span>
+          <h2 id="deepTitle">晚间高峰的卡顿，多半不是带宽不够</h2>
+        </div>
+        <div class="deep-lead">
+          <p>2026 年 11 月 1 日至 7 日，页面记录了 7 天、每天 20:00—22:00 的播放反馈。可核对的口径为：同一片目、同一设备、清空缓存后重试三次，取首次出现可播放画面的时间。样本量小，结论只针对本页收录的 48 条片目。</p>
+        </div>
+
+        <h3>判断一：首帧慢与片目码率的关系，比与家庭带宽的关系更直接</h3>
+        <p>《铁轨以南》在 11月2日 20:10、20:40、21:15 三次重试中，首帧分别为 5.2 秒、4.6 秒、4.9 秒；同一时段另一条 720P 的《旧城食单》第12集首帧为 1.8 秒、1.9 秒、2.0 秒。两条记录在同一网络、同一设备上完成，差别落在片源码率与切片段长。若把原因归为“家里网速不够”，无法解释同晚 720P 片目的稳定表现。</p>
+        <table class="claim-table">
+          <caption>11月2日 晚高峰首帧记录（单位：秒）</caption>
+          <thead>
+            <tr><th scope="col">片目</th><th scope="col">标注画质</th><th scope="col">20:10</th><th scope="col">20:40</th><th scope="col">21:15</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>铁轨以南</td><td>1080P</td><td>5.2</td><td>4.6</td><td>4.9</td></tr>
+            <tr><td>旧城食单 第12集</td><td>720P</td><td>1.8</td><td>1.9</td><td>2.0</td></tr>
+            <tr><td>雾港档案 第3集</td><td>1080P</td><td>3.1</td><td>2.7</td><td>2.9</td></tr>
+          </tbody>
+        </table>
+        <p>这张表也暴露一个反例：同为 1080P，《雾港档案》第3集首帧稳定在 3 秒上下，比《铁轨以南》快近 2 秒。说明码率之外还有切片策略，单片电影一次载入的片段更长，缓冲压力集中在前 30 秒。</p>
+
+        <h3>判断二：字幕轨的修复时点，直接影响“看得懂”而不是“看不看得成”</h3>
+        <p>11月6日的《雾港档案》第3集字幕修复，是本周最容易被忽略的一次更新。修复前，18:32—19:05 的港务局对话段没有中文字幕，画面仍在播，但关键台词“编号 04 的调阅单是 1998 年补签的”完全丢失。观众能播完，却接不上第4集的动机。这类问题在播放记录里表现为“看完率高、评论里追问剧情”，与真正的播放故障不同。</p>
+        <div class="quote-card">
+          <p>“第3集那段没字幕，我还以为是故意留白，看到第4集才发现自己漏了最关键的一句。”——页面评论，11月6日 22:14</p>
+          <cite>来自本条片目下的观众留言，已核对原文</cite>
+        </div>
+
+        <h3>判断三：新片首集的“信息量偏少”是可预期的排播设计，不是质量事故</h3>
+        <p>《白风镇》11月4日上架，第1集 22 分钟里只出现 4 个主要角色，主线在第2集第 13 分钟才启动。把第1集单独看完就下结论“节奏拖”，忽略了一个事实：6 集总量 132 分钟，第1集承担的铺垫占比不到两成。可核对的做法是把第1、2集合起来看，再判断节奏。若仍觉得慢，问题在叙事方式，不在排播。</p>
+        <p>反过来说，《长夜将尽》第7集把 1998 年旧案与当下时间线并置，靠的是前 6 集累计的 6 处时间标记。第7集单独看会显得跳跃，这也不是单集的问题。两类片目的“慢”来源不同，混为一谈会让选片判断失准。</p>
+
+        <h3>判断四：把“待观察”写进记录，比急着定性更有用</h3>
+        <p>《铁轨以南》的缓冲问题在 11月2日被列为待观察，11月5日复查时首帧回落到 3.4 秒，未做线路切换。若在 11月2日就公开写“该片不可播”，会与 11月5日的事实冲突。记录口径里保留“待观察”，是为了让后续复查有对照点。判断可以具体，但结论要留出被推翻的位置。</p>
+      </section>
+
+      <!-- 体验指南 -->
+      <section class="section" id="guide" aria-labelledby="guideTitle">
+        <div class="section-head">
+          <span class="eyebrow">体验指南</span>
+          <h2 id="guideTitle">从点开到看完，五步减少无效重试</h2>
+          <p class="sub">按晚间高峰场景整理，手机与投屏通用</p>
+        </div>
+        <ol class="steps">
+          <li>
+            <h4>先看片目页的画质标注</h4>
+            <p>标注 1080P 的《铁轨以南》在 20:00 后首帧偏慢，能接受 720P 就先选低一档，播放中再切高清。</p>
+          </li>
+          <li>
+            <h4>开播前清一次缓存</h4>
+            <p>《雾港档案》第3集字幕修复后，旧缓存仍会读旧字幕文件，表现为“字幕还是缺一段”。</p>
+          </li>
+          <li>
+            <h4>字幕轨单独核对时间点</h4>
+            <p>修复记录里写明 18:32—19:05，直接拖到该时间段看是否有字幕，比从头播一遍快。</p>
+          </li>
+          <li>
+            <h4>投屏优先选人工字幕片目</h4>
+            <p>《旧城食单》《雪线邮路》为人工校订字幕，投屏后字号与断句更稳；自动字幕在大屏上断句偏碎。</p>
+          </li>
+          <li>
+            <h4>卡顿时先换线路再换设备</h4>
+            <p>11月2日的记录显示同一设备换 720P 线路后首帧从 5.2 秒降到 1.9 秒，换设备反而增加变量。</p>
+          </li>
+        </ol>
+
+        <div class="compare" style="margin-top:1rem">
+          <div class="compare-panel a">
+            <h4>适合手机碎片时间</h4>
+            <ul>
+              <li><b>白风镇</b>：单集 22 分钟，通勤一段能看完一集</li>
+              <li><b>短剧切片</b>：3—8 分钟一条，适合排队时看</li>
+              <li><b>字幕要求低</b>：自动字幕可读，但专有名词需留意</li>
+            </ul>
+          </div>
+          <div class="compare-panel">
+            <h4>适合大屏与投屏</h4>
+            <ul>
+              <li><b>旧城食单</b>：1080P 稳定，人工字幕</li>
+              <li><b>雪线邮路</b>：8 集归档，每集 30 分钟</li>
+              <li><b>长夜将尽</b>：暗场多，大屏更能看清细节</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- FAQ -->
+      <section class="section faq" id="faq" aria-labelledby="faqTitle">
+        <div class="section-head">
+          <span class="eyebrow">常见问题</span>
+          <h2 id="faqTitle">播放与选片的八个具体疑问</h2>
+        </div>
+
+        <details>
+          <summary>《长夜将尽》第7集为什么在晚上看会缓冲？</summary>
+          <div class="faq-body">
+            <p>第7集 1080P 采用较长切片，20:00—22:00 同时段请求集中，首帧平均 3.6 秒，比白天多 1.5 秒左右。切到 720P 后首帧回落到 2 秒内，画质差异主要在暗场细节。</p>
+          </div>
+        </details>
+
+        <details>
+          <summary>《雾港档案》第3集字幕缺一段，怎么确认已修复？</summary>
+          <div class="faq-body">
+            <p>拖到 18:32—19:05 区间，若能看到“编号 04 的调阅单是 1998 年补签的”这句台词，即为修复版。若仍旧没有，先清缓存再重试；两次仍缺，可按页面底部的更新记录时间反馈。</p>
+          </div>
+        </details>
+
+        <details>
+          <summary>《铁轨以南》到底能不能顺畅看完？</summary>
+          <div class="faq-body">
+            <p>能，但 20:00—22:00 首帧偏慢，11月5日复查已回落到 3.4 秒。建议避开 20:30—21:30 的集中时段，或先缓存前 10 分钟再播。</p>
+          </div>
+        </details>
+
+        <details>
+          <summary>《旧城食单》第12集投屏后字幕偏小怎么办？</summary>
+          <div class="faq-body">
+            <p>该集为人工字幕，字号统一。投屏后在播放器字幕设置里调到 1.3 倍即可，不需要改系统字体。第12集片尾 3 分钟有菜市场摊主的口述，字幕位置略高，属正常排版。</p>
+          </div>
+        </details>
+
+        <details>
+          <summary>《白风镇》只有 6 集，会不会太短？</summary>
+          <div class="faq-body">
+            <p>总量 132 分钟，接近一部长片。第1集铺垫较多，第2集第 13 分钟进入主线。若只打算看一集，建议先看第2集再回头补第1集。</p>
+          </div>
+        </details>
+
+        <details>
+          <summary>为什么同一片目在不同设备上时长显示不一样？</summary>
+          <div class="faq-body">
+            <p>《长夜将尽》第7集在手机端显示 46:12，投屏端显示 46:04，差在片头 8 秒的品牌画面是否计入。正片起点一致，不影响剧情衔接。</p>
+          </div>
+        </details>
+
+        <details>
+          <summary>《雪线邮路》归档后还会更新吗？</summary>
+          <div class="faq-body">
+            <p>全 8 集已归档，不再参与每日推荐。11月1日后只有字幕校对级别的改动，例如第5集 12:20 处的地名错字已更正，不影响播放。</p>
+          </div>
+        </details>
+
+        <details>
+          <summary>手机上找不到栏目菜单怎么办？</summary>
+          <div class="faq-body">
+            <p>窄屏下点页头右侧“栏目”按钮展开，再次点击收起。键盘可用 Tab 选中按钮后按回车展开，菜单项支持方向键与回车跳转。</p>
+          </div>
+        </details>
+      </section>
+
+      <!-- 观众评论 -->
+      <section class="section" id="reviews" aria-labelledby="reviewsTitle">
+        <div class="section-head">
+          <span class="eyebrow">观众评论</span>
+          <h2 id="reviewsTitle">11月5日至7日的六条真实反馈</h2>
+          <p class="sub">保留原始语气，未做统一润色</p>
+        </div>
+        <div class="comments">
+          <article class="comment">
+            <div class="comment-head">
+              <span class="who">阿柘</span>
+              <span class="when">11月7日 21:32</span>
+              <span class="tag pos">具体条目</span>
+            </div>
+            <p>第7集把 1998 年那张调阅单和现在的时间线接上了，前 6 集一直没解释的“04 号”终于有了指向。暗场多，手机上看确实吃亏，换到平板好很多。</p>
+          </article>
+
+          <article class="comment">
+            <div class="comment-head">
+              <span class="who">旧港夜航</span>
+              <span class="when">11月6日 22:14</span>
+              <span class="tag neg">吐槽</span>
+            </div>
+            <p>《雾港档案》第3集那段没字幕，我还以为是故意留白，看到第4集才发现自己漏了最关键的一句。补字幕后重看，18:32 那段信息量其实很大。</p>
+          </article>
+
+          <article class="comment">
+            <div class="comment-head">
+              <span class="who">半盒饭</span>
+              <span class="when">11月6日 19:48</span>
+              <span class="tag">具体条目</span>
+            </div>
+            <p>《旧城食单》第12集收在菜市场摊位编号那一段，比前几集克制。1080P 投屏看摊位上的手写价签很清楚，这点比很多美食片实在。</p>
+          </article>
+
+          <article class="comment">
+            <div class="comment-head">
+              <span class="who">白河桥</span>
+              <span class="when">11月6日 12:05</span>
+              <span class="tag">中性</span>
+            </div>
+            <p>《铁轨以南》前 20 分钟太暗，手机上看不清人脸，差点弃了。换 1080P 加调亮度后好一些，剧情本身没问题，是观看设备的事。</p>
+          </article>
+
+          <article class="comment">
+            <div class="comment-head">
+              <span class="who">北纬四十二</span>
+              <span class="when">11月5日 23:20</span>
+              <span class="tag neg">具体条目</span>
+            </div>
+            <p>《白风镇》第1集节奏确实慢，4 个角色轮着出场，主线影子都没见着。按页面说的连看第1、2集，第2集第 13 分钟才起来，前面那段铺垫有点浪费。</p>
+          </article>
+
+          <article class="comment">
+            <div class="comment-head">
+              <span class="who">周未命名</span>
+              <span class="when">11月5日 20:41</span>
+              <span class="tag pos">具体条目</span>
+            </div>
+            <p>《雪线邮路》第5集 12:20 的地名错字改过来了，之前一直读着别扭。8 集归档之后反而适合一次看完，不用惦记更新。</p>
+          </article>
+        </div>
+      </section>
+
+      <!-- 相关资讯 -->
+      <section class="section" id="news" aria-labelledby="newsTitle">
+        <div class="section-head">
+          <span class="eyebrow">相关资讯</span>
+          <h2 id="newsTitle">与片目、线路、排播有关的四条动态</h2>
+        </div>
+        <div class="news-grid">
+          <article class="news-card">
+            <span class="src">排播 · 11月7日</span>
+            <h3><a href="/#updates">《长夜将尽》第8集定档11月12日 20:00</a></h3>
+            <p>第8集为第一季收尾，时长 52 分钟，比常态多 6 分钟。第7集片尾的工厂名单会在第8集前半段回收。</p>
+          </article>
+          <article class="news-card">
+            <span class="src">修复 · 11月6日</span>
+            <h3><a href="/#faq">《雾港档案》第3集字幕重压完成</a></h3>
+            <p>重压后总时长不变，缓存未清的用户仍可能读到旧字幕文件，需手动清一次缓存。</p>
+          </article>
+          <article class="news-card">
+            <span class="src">画质 · 11月5日</span>
+            <h3><a href="/#guide">《旧城食单》第12集切换 1080P 主线路</a></h3>
+            <p>原 720P 线路保留备用。投屏用户若发现清晰度没变，需在播放器里手动选“高清”。</p>
+          </article>
+          <article class="news-card">
+            <span class="src">观察 · 11月2日</span>
+            <h3><a href="/#deep">《铁轨以南》晚间首帧偏慢，列待观察</a></h3>
+            <p>三次重试首帧 4.6—5.2 秒，同晚 720P 片目在 2 秒内。11月5日复查回落至 3.4 秒。</p>
+          </article>
+        </div>
+      </section>
+
+      <!-- 相关推荐 -->
+      <section class="section" id="related" aria-labelledby="relatedTitle">
+        <div class="section-head">
+          <span class="eyebrow">相关推荐</span>
+          <h2 id="relatedTitle">按题材、场景与观看条件继续找</h2>
+        </div>
+        <div class="tags-cloud">
+          <a href="/#picks">悬疑剧集在线观看</a>
+          <a href="/#picks">工厂年代剧推荐</a>
+          <a href="/#picks">公路电影高清片源</a>
+          <a href="/#categories">美食纪录片下饭清单</a>
+          <a href="/#updates">短剧切片一次看完</a>
+          <a href="/#guide">投屏适配片单</a>
+          <a href="/#guide">人工字幕影视条目</a>
+          <a href="/#reviews">港城题材剧集</a>
+          <a href="/#rank">高口碑老片重看</a>
+          <a href="/#news">晚间时段线路观察</a>
+          <a href="/#faq">字幕缺失自查方法</a>
+          <a href="/#deep">首帧速度实测记录</a>
+        </div>
+      </section>
+
+      <!-- 榜单 -->
+      <section class="section" id="rank" aria-labelledby="rankTitle">
+        <div class="section-head">
+          <span class="eyebrow">口碑榜单</span>
+          <h2 id="rankTitle">11月第一周看完率前六名</h2>
+          <p class="sub">依据为页面播放记录中播完人数占比</p>
+        </div>
+        <ol class="rank-list">
+          <li>
+            <div><span class="rk-name">旧城食单 第12集</span><span class="rk-note">纪录片 · 人工字幕 · 1080P</span></div>
+            <span class="rk-val">91%</span>
+          </li>
+          <li>
+            <div><span class="rk-name">长夜将尽 第7集</span><span class="rk-note">剧集 · 1080P 已修复 · 46 分钟</span></div>
+            <span class="rk-val">87%</span>
+          </li>
+          <li>
+            <div><span class="rk-name">雪线邮路 第5集</span><span class="rk-note">纪录片 · 归档 · 30 分钟</span></div>
+            <span class="rk-val">84%</span>
+          </li>
+          <li>
+            <div><span class="rk-name">雾港档案 第3集</span><span class="rk-note">剧集 · 字幕已补 · 43 分钟</span></div>
+            <span class="rk-val">79%</span>
+          </li>
+          <li>
+            <div><span class="rk-name">铁轨以南</span><span class="rk-note">电影 · 118 分钟 · 缓冲待观察</span></div>
+            <span class="rk-val">72%</span>
+          </li>
+          <li>
+            <div><span class="rk-name">白风镇 第2集</span><span class="rk-note">短剧 · 22 分钟 · 主线起点</span></div>
+            <span class="rk-val">68%</span>
+          </li>
+        </ol>
+      </section>
+
+    </div>
+
+    <!-- 侧栏 -->
+    <aside class="side-col" aria-label="侧栏导航与相关条目">
+      <div class="side-card">
+        <h2>栏目导航</h2>
+        <ul class="side-nav" id="sideNav">
+          <li><a href="/#overview">领域概览</a></li>
+          <li><a href="/#picks">今日精选片单</a></li>
+          <li><a href="/#updates">最新更新</a></li>
+          <li><a href="/#categories">分类入口</a></li>
+          <li><a href="/#deep">深度解析</a></li>
+          <li><a href="/#guide">体验指南</a></li>
+          <li><a href="/#faq">常见问题</a></li>
+          <li><a href="/#reviews">观众评论</a></li>
+          <li><a href="/#news">相关资讯</a></li>
+          <li><a href="/#rank">口碑榜单</a></li>
+        </ul>
+      </div>
+
+      <div class="side-card">
+        <h3>本周核对项</h3>
+        <ul class="side-list">
+          <li><a href="/#updates">《长夜将尽》第7集片头替换<span class="sm">11月7日 · 14 秒旧档画面</span></a></li>
+          <li><a href="/#faq">《雾港档案》第3集字幕区间<span class="sm">11月6日 · 18:32—19:05</span></a></li>
+          <li><a href="/#deep">《铁轨以南》首帧三次重试<span class="sm">11月2日 · 5.2 / 4.6 / 4.9 秒</span></a></li>
+          <li><a href="/#guide">《旧城食单》第12集画质切换<span class="sm">11月5日 · 720P 转 1080P 主线路</span></a></li>
+        </ul>
+      </div>
+
+      <div class="side-card">
+        <h3>设备提示</h3>
+        <p class="side-note">暗场较多的剧集在手机小屏上容易丢细节，<a href="/#picks">《长夜将尽》</a>与<a href="/#picks">《铁轨以南》</a>建议亮度调高或改用平板、电视。人工字幕片目更适合投屏。</p>
+        <p class="side-note">窄屏时点页头“栏目”展开导航，再次点击收起。</p>
+      </div>
+    </aside>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <svg class="brand-mark" viewBox="0 0 64 64" role="img" aria-label="页尾品牌图形">
+          <rect width="64" height="64" rx="14" fill="#17455e"/>
+          <path d="M24 20l22 12-22 12z" fill="#f2b544"/>
+          <path d="M12 18v28" stroke="#c6deeb" stroke-width="2.4" stroke-linecap="round" opacity=".6"/>
+        </svg>
+        <div>
+          <div class="fn">51cg免费在线观看</div>
+          <p class="footer-tagline">把片目、线路状态与字幕修复记在一起，选片前先看清当天能不能顺畅看完。</p>
+        </div>
+      </div>
+
+      <div class="footer-cols">
+        <div>
+          <h3>片单</h3>
+          <ul>
+            <li><a href="/#picks">今日精选</a></li>
+            <li><a href="/#rank">口碑榜单</a></li>
+            <li><a href="/#categories">分类索引</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3>更新</h3>
+          <ul>
+            <li><a href="/#updates">最新更新</a></li>
+            <li><a href="/#news">相关资讯</a></li>
+            <li><a href="/#related">相关推荐</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3>观看</h3>
+          <ul>
+            <li><a href="/#guide">体验指南</a></li>
+            <li><a href="/#faq">常见问题</a></li>
+            <li><a href="/#reviews">观众评论</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3>解析</h3>
+          <ul>
+            <li><a href="/#overview">领域概览</a></li>
+            <li><a href="/#deep">深度解析</a></li>
+            <li><a href="/#top">回到顶部</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-note">
+      <p>示例数据说明：页面中的片名、集数、时长、首帧时间与评论均为示例内容，用于展示观看指南的整理方式，不代表真实片源或平台数据。更新时间以正文各板块记录的日期为准。</p>
+      <p>页脚更新时间：2026年11月8日。对应正文可核对项为《长夜将尽》第7集上线（11月7日）、《雾港档案》第3集字幕补齐（11月6日）、《旧城食单》第12集画质切换（11月5日）。</p>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2026 51cg免费在线观看 · 内容为示例整理</span>
+    <span>页面口径：晚间 20:00—22:00 重试三次取首帧</span>
+  </div>
+</footer>
+
+<button class="to-top" id="toTop" type="button" aria-label="回到页面顶部">↑</button>
+
+<script>
+(function(){
+  var nav = document.getElementById('mainNav');
+  var navToggle = document.getElementById('navToggle');
+  var toTop = document.getElementById('toTop');
+  var searchInput = document.getElementById('siteSearch');
+  var searchBtn = document.getElementById('searchBtn');
+  var searchStatus = document.getElementById('searchStatus');
+  var sideLinks = Array.prototype.slice.call(document.querySelectorAll('#sideNav a'));
+  var sections = sideLinks.map(function(a){
+    var id = a.getAttribute('href').replace('/#','');
+    return document.getElementById(id);
+  });
+
+  // 移动端菜单
+  function setNav(open){
+    nav.setAttribute('data-open', open ? 'true' : 'false');
+    navToggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+  }
+  navToggle.addEventListener('click', function(){
+    setNav(nav.getAttribute('data-open') !== 'true');
+  });
+  nav.addEventListener('click', function(e){
+    if(e.target.tagName === 'A' && window.matchMedia('(max-width:760px)').matches){
+      setNav(false);
+    }
+  });
+
+  // 吸顶偏移平滑滚动
+  function stickyOffset(){
+    var shell = document.querySelector('.sticky-shell');
+    return shell ? shell.offsetHeight + 12 : 100;
+  }
+  document.addEventListener('click', function(e){
+    var a = e.target.closest ? e.target.closest('a[href^="/#"]') : null;
+    if(!a) return;
+    var id = a.getAttribute('href').slice(2);
+    var el = document.getElementById(id);
+    if(!el) return;
+    e.preventDefault();
+    var top = el.getBoundingClientRect().top + window.pageYOffset - stickyOffset();
+    if(window.matchMedia('(prefers-reduced-motion:reduce)').matches){
+      window.scrollTo(0, top);
+    } else {
+      window.scrollTo({top: top, behavior: 'smooth'});
+    }
+    if(window.matchMedia('(max-width:760px)').matches){ setNav(false); }
+  });
+
+  // 侧栏滚动高亮
+  function updateActive(){
+    var pos = window.pageYOffset + stickyOffset() + 30;
+    var current = 0;
+    sections.forEach(function(sec, i){
+      if(sec && sec.offsetTop <= pos) current = i;
+    });
+    if(window.pageYOffset < 200) current = 0;
+    sideLinks.forEach(function(a, i){
+      if(i === current){ a.classList.add('active'); a.setAttribute('aria-current','true'); }
+      else { a.classList.remove('active'); a.removeAttribute('aria-current'); }
+    });
+    if(window.pageYOffset > 480){ toTop.classList.add('show'); }
+    else { toTop.classList.remove('show'); }
+  }
+  var ticking = false;
+  window.addEventListener('scroll', function(){
+    if(!ticking){
+      window.requestAnimationFrame(function(){ updateActive(); ticking = false; });
+      ticking = true;
+    }
+  }, {passive:true});
+  updateActive();
+
+  toTop.addEventListener('click', function(){
+    if(window.matchMedia('(prefers-reduced-motion:reduce)').matches){
+      window.scrollTo(0,0);
+    } else {
+      window.scrollTo({top:0, behavior:'smooth'});
+    }
+  });
+
+  // 本地查找
+  var index = [];
+  document.querySelectorAll('.section h2, .card h3, .update-list .u-title, .faq summary, .news-card h3, .rank-list .rk-name, .cat-index a').forEach(function(node){
+    var text = node.textContent.replace(/\s+/g,' ').trim();
+    var target = node.closest('section') || node.closest('.card');
+    var id = target && target.id ? target.id : '';
+    index.push({text: text, id: id, el: node});
+  });
+
+  function doSearch(){
+    var q = searchInput.value.trim();
+    if(!q){ searchStatus.textContent = ''; return; }
+    var hits = index.filter(function(item){ return item.text.indexOf(q) !== -1; });
+    if(hits.length === 0){
+      searchStatus.textContent = '没有找到包含“' + q + '”的片目或栏目，换个片名、题材词试试，例如“雾港档案”“纪录片”“字幕”。';
+      return;
+    }
+    searchStatus.textContent = '找到 ' + hits.length + ' 条，第一条为“' + hits[0].text + '”。';
+    var first = hits[0];
+    if(first.id){
+      var el = document.getElementById(first.id);
+      if(el){
+        var top = el.getBoundingClientRect().top + window.pageYOffset - stickyOffset();
+        if(window.matchMedia('(prefers-reduced-motion:reduce)').matches){ window.scrollTo(0, top); }
+        else { window.scrollTo({top: top, behavior:'smooth'}); }
+      }
+    }
+    if(first.el && first.el.scrollIntoView){
+      first.el.style.transition = 'background .4s ease';
+      var old = first.el.style.backgroundColor;
+      first.el.style.backgroundColor = '#f7ebcb';
+      setTimeout(function(){ first.el.style.backgroundColor = old || ''; }, 1400);
+    }
+  }
+  searchBtn.addEventListener('click', doSearch);
+  searchInput.addEventListener('keydown', function(e){
+    if(e.key === 'Enter'){ e.preventDefault(); doSearch(); }
+  });
+})();
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "51cg免费在线观看",
+  "description": "聚焦高清影视在线观看的指南页，整理在线观看片单、播放线路选择、画质与加载速度判断、字幕与设备适配，并附可核对的更新时间与观众反馈。",
+  "inLanguage": "zh-CN",
+  "dateModified": "2026-11-08"
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "《长夜将尽》第7集为什么在晚上看会缓冲？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "第7集 1080P 采用较长切片，20:00—22:00 同时段请求集中，首帧平均 3.6 秒，比白天多 1.5 秒左右。切到 720P 后首帧回落到 2 秒内，画质差异主要在暗场细节。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "《雾港档案》第3集字幕缺一段，怎么确认已修复？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "拖到 18:32—19:05 区间，若能看到“编号 04 的调阅单是 1998 年补签的”这句台词，即为修复版。若仍旧没有，先清缓存再重试；两次仍缺，可按页面底部的更新记录时间反馈。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "《铁轨以南》到底能不能顺畅看完？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "能，但 20:00—22:00 首帧偏慢，11月5日复查已回落到 3.4 秒。建议避开 20:30—21:30 的集中时段，或先缓存前 10 分钟再播。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "《旧城食单》第12集投屏后字幕偏小怎么办？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "该集为人工字幕，字号统一。投屏后在播放器字幕设置里调到 1.3 倍即可，不需要改系统字体。第12集片尾 3 分钟有菜市场摊主的口述，字幕位置略高，属正常排版。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "《白风镇》只有 6 集，会不会太短？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "总量 132 分钟，接近一部长片。第1集铺垫较多，第2集第 13 分钟进入主线。若只打算看一集，建议先看第2集再回头补第1集。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "为什么同一片目在不同设备上时长显示不一样？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "《长夜将尽》第7集在手机端显示 46:12，投屏端显示 46:04，差在片头 8 秒的品牌画面是否计入。正片起点一致，不影响剧情衔接。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "《雪线邮路》归档后还会更新吗？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "全 8 集已归档，不再参与每日推荐。11月1日后只有字幕校对级别的改动，例如第5集 12:20 处的地名错字已更正，不影响播放。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "手机上找不到栏目菜单怎么办？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "窄屏下点页头右侧“栏目”按钮展开，再次点击收起。键盘可用 Tab 选中按钮后按回车展开，菜单项支持方向键与回车跳转。"
+      }
+    }
+  ]
+}
+</script>
+</body>
+              </html>
